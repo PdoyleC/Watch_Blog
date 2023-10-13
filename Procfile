@@ -1,1 +1,1 @@
-web: gunicorn watchgroup.wsgi
+web: gunicorn watchgroup.wsgi.application
