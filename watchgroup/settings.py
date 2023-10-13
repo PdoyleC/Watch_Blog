@@ -48,7 +48,6 @@ INSTALLED_APPS = [
 ]
 
 
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -136,7 +135,7 @@ STATICFILES_STORAGE = 'Cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_URL '/media/'
+MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'Cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
