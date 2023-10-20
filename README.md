@@ -11,10 +11,12 @@
 
 
 
-
+## Security
+- The SECRET_KEY has been changed since the second commit / push to GitHut, and env.py placed into gitignore. 
 
 ## Credits
 
 - Django Generic view documentation: [Django Generic view](https://docs.djangoproject.com/en/3.2/topics/class-based-views/generic-display/).
 - Django admin site documentation: [Django admin site](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display).
 - Django URL dispatcher documentation: [Django URL dispatcher site](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request).
+- Single sign in for a site: [django-allauth site](https://docs.allauth.org/en/latest/).
