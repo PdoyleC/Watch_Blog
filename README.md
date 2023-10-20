@@ -2,6 +2,7 @@
 
 
 ![Watch on wrist image](documentation/watch.jpg)
+![Watch on wrist image](documentation/watch2.jpg)
 
 ## **Purpose of the site**
 
