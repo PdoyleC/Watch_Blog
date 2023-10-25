@@ -10,7 +10,9 @@
 
 
 
+## Issues
 
+- SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
 
 ## Security
 - The SECRET_KEY has been changed since the second commit / push to GitHut, and env.py placed into gitignore. 
