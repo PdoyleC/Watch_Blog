@@ -10,6 +10,19 @@
 
 
 
+## Design
+
+<details>
+<summary>Watch Favicon Image</summary>
+
+![Watch on wrist image](documentation/paintfco.jpg)
+</details>
+
+- Paint was used to design the image.
+- favicon was used for website image tab [Link](https://favicon.io/favicon-converter/)
+
+
+
 ## Issues
 
 - SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
