@@ -27,6 +27,17 @@
 
 - SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
 
+## Technologies Used
+### Languages Used
+- [Python](https://www.python.org/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+### Frameworks, Libraries & Programs Used
+- [Cloudinary](https://cloudinary.com/)  used to upload, store, manage, and link images.
+- [Django](https://www.djangoproject.com/) is a free Python-based web framework that encourages rapid development with model–template–views.
+- [Font Awesome](https://fontawesome.com/) is a font icons toolkit for aesthetic buttons and links.
+
+
 ## Security
 - The SECRET_KEY has been changed since the second commit / push to GitHut, and env.py placed into gitignore. 
 
