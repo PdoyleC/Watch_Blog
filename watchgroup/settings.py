@@ -35,6 +35,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['watch-blog-1e2436fde037.herokuapp.com', 'localhost',
                  '8000-pdoylec-watch-blog-dbylgchy07.us2.codeanyapp.com']
 
+# To prevent 500 errors during login and registration
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Application definition
 
