@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %}
+{%extends 'base.html' %} {%block content %} {%load crispy_forms_tags %}
 
 <div class="masthead">
   <div class="container">
@@ -11,14 +11,14 @@
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
         <!-- The featured image URL goes in the src attribute -->
-        {% if "placeholder" in post.featured_image.url %}
+        {%if "placeholder" in post.featured_image.url %}
         <img
-          src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg"
+          src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1698921288/pexels-mat-brown-1034063_r49gbd.jpg"
           width="100%"
         />
-        {% else %}
+        {%else %}
         <img src=" {{ post.featured_image.url }}" width="100%" />
-        {% endif %}
+        {%endif %}
       </div>
     </div>
   </div>
@@ -39,13 +39,13 @@
             </strong>
           </div>
           <div class="col-1">
-            {% with comments.count as total_comments %}
+            {%with comments.count as total_comments %}
             <strong class="text-secondary"
               ><i class="far fa-comments"></i>
               <!-- Our total_comments variable goes before the closing strong tag -->
               {{ total_comments }}</strong
             >
-            {% endwith %}
+            {%endwith %}
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@
       <h3>Comments:</h3>
       <div class="card-body">
         <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
-        {% for comment in comments %}
+        {%for comment in comments %}
         <div class="comments" style="padding: 10px">
           <p class="font-weight-bold">
             <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
@@ -76,15 +76,27 @@
           {{ comment.body | linebreaks }}
         </div>
         <!-- Our for loop ends here -->
-        {% endfor %}
+        {%endfor %}
       </div>
     </div>
     <div class="col-md-4 card mb-4 mt-3">
       <div class="card-body">
-        <!-- For later -->
+        {%if commented %}
+        <div class="alert alert-success" role="alert">
+          Your comment is awaiting approval
+        </div>
+        {%else %} {% if user.is_authenticated %}
+
+        <h3>Leave a comment:</h3>
+        <p>Posting as: {{ user.username }}</p>
+        <form method="post" style="margin-top: 1.3em">
+          {{ comment_form | crispy }} {% csrf_token %}
+          <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+        </form>
+        {%endif %} {%endif %}
       </div>
     </div>
   </div>
 </div>
 
-{% endblock content %}
+{%endblock content %}
