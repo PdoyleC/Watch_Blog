@@ -2,7 +2,6 @@
 
 
 ![Watch on wrist image](documentation/watch.jpg)
-![Watch on wrist image](documentation/watch2.jpg)
 
 ## **Purpose of the site**
 
@@ -18,6 +17,7 @@
 ![Watch on wrist image](documentation/paintfco.jpg)
 </details>
 
+- the watch logo was created in Publisher, and can be found in the documentation folder. 
 - Paint was used to design the image.
 - favicon was used for website image tab [Link](https://favicon.io/favicon-converter/)
 
