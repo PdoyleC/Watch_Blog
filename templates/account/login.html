@@ -3,16 +3,20 @@ crispy_forms_tags %}{% block head_title %}{% trans "Sign In" %} {%endblock%}
 {%block content%}
 <!-- login page -->
 <div class="container">
-  <div class="row">
+  <div class="login-header img-position-header login-img">
     <div class="col-md-8 mt-3 offset-md-2">
-      <h3>{% trans "Sign In" %}</h3>
+      <h1>{% trans "Sign In" %}</h1>
 
       <p>
-        {%blocktrans %}Welcome back to the Watch blog. To leave a comment or
-        like a post, please log in. If you have not created an account yet, then
+        {%blocktrans %}Welcome to the Watch blog. To leave a comment or like a
+        post, please log in. If you have not created an account yet, then
         <a class="link" href="{{ signup_url }}">Sign Up</a>
         first.{%endblocktrans %}
       </p>
+      <img
+        src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699447712/watchparts.jpg_gqcvet.jpg"
+        width="20%"
+      />
     </div>
   </div>
   <div class="row">

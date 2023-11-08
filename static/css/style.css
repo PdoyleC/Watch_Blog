@@ -147,7 +147,7 @@ a.nav-link-active {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -180,4 +180,32 @@ a.nav-link-active {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+
+/* login page */
+.img-position-header {
+    position: relative;
+}
+
+.login-header {
+    background-color: #f1f2f2;
+}
+
+.login-header>h1 {
+    color: #4607f5;
+    margin-top: 10%;
+    padding-top: 50px;
+}
+
+.login-header>p {
+    font-size: 1.4em;
+    padding-bottom: 50px;
+    margin-bottom: 5%;
+}
+
+.login-header a {
+    color: #4607f5;
+    text-decoration: none;
+    font-weight: bold;
 }

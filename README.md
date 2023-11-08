@@ -42,6 +42,10 @@
 ## Security
 - The SECRET_KEY has been changed since the second commit / push to GitHut, and env.py placed into gitignore. 
 
+## Images
+
+- <https://unsplash.com/photos/black-and-yellow-metal-tool-UGf37D6PMiQ>
+
 ## Credits
 
 - Django Generic view documentation: [Django Generic view](https://docs.djangoproject.com/en/3.2/topics/class-based-views/generic-display/).
