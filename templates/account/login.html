@@ -1,9 +1,9 @@
-{%extends "base.html" %} {%load i18n %} {% load account socialaccount %} {%load
-crispy_forms_tags %}{% block head_title %}{% trans "Sign In" %} {%endblock%}
-{%block content%}
+{%extends "base.html" %} {% load static %} {%load i18n %} {% load account
+socialaccount %} {%load crispy_forms_tags %}{% block head_title %}{% trans "Sign
+In" %} {%endblock%} {%block content%}
 <!-- login page -->
-<div class="container">
-  <div class="login-header img-position-header login-img">
+<div class="container text-center">
+  <div class="login-header img-position-header">
     <div class="col-md-8 mt-3 offset-md-2">
       <h1>{% trans "Sign In" %}</h1>
 
@@ -14,8 +14,9 @@ crispy_forms_tags %}{% block head_title %}{% trans "Sign In" %} {%endblock%}
         first.{%endblocktrans %}
       </p>
       <img
-        src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699447712/watchparts.jpg_gqcvet.jpg"
-        width="20%"
+        src="{% static 'images/watchparts140.jpg' %}"
+        class="login-img"
+        alt="back image of watch parts"
       />
     </div>
   </div>
