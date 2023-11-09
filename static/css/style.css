@@ -11,7 +11,7 @@ body {
 }
 
 .current {
-    border-bottom: 1px solid #000000 !important;
+    border-bottom: 1px solid #ffffff !important;
 }
 
 .brand-name-link {
@@ -23,6 +23,18 @@ body {
 .logo-bg img {
     width: 190px;
     height: 50px;
+}
+
+.nav-link {
+    color: #f7f7f7 !important;
+}
+
+.dark-bg {
+    background-color: #445261;
+}
+
+.bg-white {
+    background-color: #445261 !important;
 }
 
 .active {
