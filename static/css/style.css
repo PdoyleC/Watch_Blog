@@ -182,6 +182,14 @@ a.nav-link-active {
     border: none;
 }
 
+/* social-networks */
+.social-networks {
+    display: contents;
+    margin: 1rem 0;
+    gap: 2rem;
+    padding: 0;
+    color: #fff;
+}
 
 /* login page */
 .img-position-header {
