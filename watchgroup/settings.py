@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['watch-blog-1e2436fde037.herokuapp.com', 'localhost', '8000-pdoylec-watch-blog-t73vjp2szq.us2.codeanyapp.com',
+ALLOWED_HOSTS = ['watch-blog-1e2436fde037.herokuapp.com', 'localhost', '8000-pdoylec-watch-blog-t73vjp2szq.us2.codeanyapp.com', '8000-pdoylec-watch-blog-80r0rlzg2w.us2.codeanyapp.com',
                  '8000-pdoylec-watch-blog-dbylgchy07.us2.codeanyapp.com']
 
 # To prevent 500 errors during login and registration
