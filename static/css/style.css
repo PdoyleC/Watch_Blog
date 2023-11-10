@@ -63,6 +63,17 @@ a.nav-link-active {
     color: #0E070C;
 }
 
+/* messages */
+
+#msg {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    color: #000000;
+    background-color: #c39dbb;
+    border-color: #000000;
+}
+
 
 .red-o {
     color: #E84610;

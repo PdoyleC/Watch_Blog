@@ -84,6 +84,11 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
             </li>
+            <li class="nav-item">
+              <p class="nav-link text-white mb-0">
+                Welcome {{ user.username }}
+              </p>
+            </li>
             {% else %}
             <li class="nav-item">
               <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
@@ -102,6 +107,21 @@
       <!-- Content Goes here -->
       {% endblock content %}
     </main>
+    {% for message in messages %}
+    <div
+      class="alert {{ message.tags }} alert-dismissible fade show"
+      id="msg"
+      role="alert"
+    >
+      {{ message | safe }}
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    {% endfor %}
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">

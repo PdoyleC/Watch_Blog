@@ -63,3 +63,6 @@
 [Stack overflow L3](https://stackoverflow.com/questions/62451903/how-i-can-underline-the-current-page-inside-my-bootstrap-nav),
 [Stack overflow L4](https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page).
 
+
+- Message Alerts when signed in and out in bootstrap [Message Alerts](https://ordinarycoders.com/blog/article/django-messages-framework).
+
