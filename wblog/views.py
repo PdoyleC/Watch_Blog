@@ -1,8 +1,10 @@
+import uuid
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from django.utils.text import slugify
+from .forms import CommentForm, NewPostForm
 
 
 # Post list view
@@ -74,6 +76,8 @@ class PostDetail(View):
             },
         )
 
+# Likes an Alert
+
 
 class PostLike(View):
 
@@ -85,3 +89,27 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+# Creates a new Alert
+
+
+class NewPost(View):
+    def get(self, request):
+        form = NewPostForm()
+        return render(request, 'new_post.html', {'form': form})
+
+    def post(self, request):
+        form = NewPostForm(request.POST, request.FILES)
+        if form.is_valid():
+            # Saves the Alert and gives it a unique slug
+            post = form.save(commit=False)
+            post.author = request.user
+            unique_id = uuid.uuid4().hex[:5]
+            post.slug = "{}-{}".format(slugify(post.title), unique_id)
+            post.save()
+
+            return HttpResponseRedirect(reverse(
+                'post_detail', args=[post.slug]))
+
+        # Renders the new Alert page if form is not valid
+        return render(request, 'new_post.html', {'form': form})
