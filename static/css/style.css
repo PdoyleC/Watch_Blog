@@ -74,6 +74,15 @@ a.nav-link-active {
     border-color: #000000;
 }
 
+.errorlist {
+    position: absolute;
+    border-top: 1em;
+    left: 1em;
+    color: #000000;
+    background-color: #c39dbb;
+    border-color: #000000;
+}
+
 
 .red-o {
     color: #E84610;
