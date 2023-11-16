@@ -1,17 +1,24 @@
 {% extends 'base.html' %} {% block content %}
-<div class="center-content">
-  <h2>{% if editing %}Edit{% else %}Post{% endif %} an Alert</h2>
-  <div class="new-post">
-    <form method="post" enctype="multipart/form-data">
-      {% csrf_token %} {{ form.as_p }}
-      <button
-        class="btn-primary"
-        type="submit"
-        aria-label="{% if editing %}Update{% else %}Post{% endif %}"
-      >
-        {% if editing %}Update{% else %}Post{% endif %}
-      </button>
-    </form>
+<div class="container border-bottom">
+  <div class="card-body">
+    <h2>{% if editing %}Edit{% else %}Create{% endif %} a Post</h2>
+    <div class="new-post">
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %} {{ form.as_p }}
+        <button
+          class="btn-primary"
+          type="submit"
+          aria-label="{% if editing %}Update{% else %}Post{% endif %}"
+        >
+          {% if editing %}Update{% else %}Post{% endif %}
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="border-top pt-3">
+    <small class="text-muted"
+      >Changed your mind?<a href="{% url 'home' %}"> Go Back</a></small
+    >
   </div>
 </div>
 {% endblock %}
