@@ -106,6 +106,7 @@ class NewPost(View):
             post.author = request.user
             unique_id = uuid.uuid4().hex[:5]
             post.slug = "{}-{}".format(slugify(post.title), unique_id)
+            post.status = 1
             post.save()
 
             return HttpResponseRedirect(reverse(
