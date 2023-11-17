@@ -1,5 +1,5 @@
 import uuid
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
@@ -114,3 +114,21 @@ class NewPost(View):
 
         # Renders the new Alert page if form is not valid
         return render(request, 'new_post.html', {'form': form})
+
+# Deletes an Alert
+
+
+class DeletePost(View):
+    def get(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+        return render(request, 'post_delete.html', {'post': post})
+
+    def post(self, request, slug):
+        post = Post.objects.get(slug=slug)
+        # Authorizes author to delete the Alert
+        if request.user == post.author:
+            # Deletes the Alert and redirects to Home Page
+            post.delete()
+            return redirect('home')
+        else:
+            return redirect('post_detail', slug=slug)

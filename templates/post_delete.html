@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+<!--Stop-->
+{% load i18n %}
+<!--Stop-->
+{% block head_title %}{% trans "Sign Out" %}{% endblock head_title %}
+<!--Stop-->
+{% block content %}
+<div class="container text-center row border-bottom pt-3">
+  <h1>{% trans "Delete Post" %}</h1>
+  <h2>{% trans 'Are you sure you want to delete your Alert?' %}</h2>
+  <form action="{% url 'post_delete' post.slug %}" method="post">
+    {% csrf_token %}
+    <button
+      type="submit"
+      class="btn btn-danger"
+      aria-label="Confirm deletion of Alert"
+    >
+      Confirm
+    </button>
+  </form>
+  <br />
+  <br />
+  <form action="{% url 'post_detail' post.slug %}" method="get">
+    {% csrf_token %}
+    <button
+      type="submit"
+      class="btn btn-primary"
+      aria-label="Cancel deletion and go back to the Alert"
+    >
+      Cancel
+    </button>
+  </form>
+</div>
+
+{% endblock content %} "btn btn-primary"
