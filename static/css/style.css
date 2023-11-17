@@ -192,9 +192,11 @@ a.nav-link-active {
     color: lightgray;
 }
 
-.btn-signup {
+.btn-signup,
+.btn-primary {
     background-color: #000000;
     color: #fff;
+    border-color: #000000;
 }
 
 .btn-signup:hover,
