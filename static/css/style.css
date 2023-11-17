@@ -63,7 +63,7 @@ a.nav-link-active {
     color: #0E070C;
 }
 
-/* messages */
+/* Error messages */
 
 #msg {
     position: absolute;
@@ -92,6 +92,11 @@ a.nav-link-active {
     align-items: center;
 }
 
+/* Comments */
+#comments-box {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .red-o {
     color: #E84610;
@@ -160,14 +165,11 @@ a.nav-link-active {
     content: "";
     position: absolute;
     top: 0;
-    right: 90%;
+    right: 99%;
     height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+    width: 10%;
+    background: #F9FAFC;
+
 }
 
 .post-link {
