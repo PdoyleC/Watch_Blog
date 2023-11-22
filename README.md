@@ -1,4 +1,4 @@
-# Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com//)**
+# Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com/)**
 
 
 ## [Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
@@ -29,18 +29,34 @@
 
 <details>
 <summary>NavBar</summary>
+For authenticated users it links to:
+
+- Home Page
+- About page
+- Write a Post Page
+- Logout Page
+- Welcome User Name display
 
 ![NavBar image](documentation/navbar.png)
 </details>
 
+
 <details>
 <summary>NavBar Not signed in</summary>
+For authenticated users it links to:
 
+- Home Page
+- About page
+- Register Page
+- Login Page
+  
 ![NavBar not signed in image](documentation/navbarnotreg.png)
 </details>
 
 <details>
 <summary>Footer</summary>
+
+- Links to facebook, Twitter, GitHub, Instragram and Youtube
 
 ![Footer image](documentation/footer.png)
 </details>
@@ -48,23 +64,30 @@
 <details>
 <summary>About Page</summary>
 
+-Contains info about the site.
+
 ![About page image](documentation/aboutpage.png)
 </details>
 
 <details>
 <summary>Registration Page</summary>
 
+- Where new users are able to create an account to post an article. 
 ![Registration page image](documentation/regpage.png)
 </details>
 
 <details>
 <summary>Delete button</summary>
 
+- Where users can delete a post that they have created, this is only visible if your the author of the post. 
+
 ![Delete image](documentation/delete.png)
 </details>
 
 <details>
 <summary>Delete Confirmation Page</summary>
+
+- Just a check to see if the user wants to delete there post.
 
 ![Delete page image](documentation/deletepage.png)
 </details>
