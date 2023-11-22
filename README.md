@@ -25,6 +25,30 @@
 - favicon was used for website image tab [Link](https://favicon.io/favicon-converter/)
 
 
+## Features
+
+## Deplyoment
+
+The website uses [ElephantSQL](https://www.elephantsql.com/) for its database.
+
+- I signed up with my GitHub account.
+- I created a new instance and the free plan was selected and Europe was selected as the region.
+- Once created I was able to access the url and password for the database.
+
+The website uses [Cloudinary](https://cloudinary.com/) for storing images.
+
+- I created an account in Cloudinary.
+- I copied the API environment variable over to the code.
+
+The website was deployed to [Heroku](https://heroku.com/) by following these steps:
+
+- I created a new app/Project.
+- Inside the project settings tab and clicked reveal configuration vars
+- I added the following configuration vars: CLOUDINARY_URL, DATABASE_URL, PORT, SECRET_KEY - DISABLE_COLLECTSTATIC = Only for initial deployment-
+- I went to the deploy tab and connected the GitHub repository
+- Made sure DEBUG was set to False and removed DISABLE_COLLECTSTATIC in configuration vars.
+- selected Deploy tab and clicked Main branch.
+- clicked on Open app.
 
 ## Issues
 
@@ -32,9 +56,13 @@
 - 
 
 ## Technologies Used
-### Languages Used
-- [Python](https://www.python.org/)
+
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Favicon.io](https://favicon.io/) has been used for the favicon.
+- [GitHub](https://github.com/PdoyleC/Watch_Blog) repository has been used for hosting the code.
+- Cloudinary has been used to store media files.
+- [Font Awesome](https://fontawesome.com/icons) has been used for icons.
+- ElephantSQL has been used as database solution.
 
 ### Frameworks, Libraries & Programs Used
 - [Cloudinary](https://cloudinary.com/)  used to upload, store, manage, and link images.
@@ -45,9 +73,6 @@
 ## Security
 - The SECRET_KEY has been changed since the second commit / push to GitHut, and env.py placed into gitignore. 
 
-## Images
-
-- <https://unsplash.com/photos/black-and-yellow-metal-tool-UGf37D6PMiQ>
 
 ## Credits
 
