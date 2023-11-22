@@ -27,6 +27,49 @@
 
 ## Features
 
+<details>
+<summary>NavBar</summary>
+
+![NavBar image](documentation/navbar.png)
+</details>
+
+<details>
+<summary>NavBar Not signed in</summary>
+
+![NavBar not signed in image](documentation/navbarnotreg.png)
+</details>
+
+<details>
+<summary>Footer</summary>
+
+![Footer image](documentation/footer.png)
+</details>
+
+<details>
+<summary>About Page</summary>
+
+![About page image](documentation/aboutpage.png)
+</details>
+
+<details>
+<summary>Registration Page</summary>
+
+![Registration page image](documentation/regpage.png)
+</details>
+
+<details>
+<summary>Delete button</summary>
+
+![Delete image](documentation/delete.png)
+</details>
+
+<details>
+<summary>Delete Confirmation Page</summary>
+
+![Delete page image](documentation/deletepage.png)
+</details>
+
+
 ## Languages Used
 
 - [HTML](https://en.wikipedia.org/wiki/HTML/)
