@@ -101,7 +101,6 @@ class NewPost(View):
     def post(self, request):
         form = NewPostForm(request.POST, request.FILES)
         if form.is_valid():
-            # Saves the Alert and gives it a unique slug
             post = form.save(commit=False)
             post.author = request.user
             unique_id = uuid.uuid4().hex[:5]
@@ -111,8 +110,6 @@ class NewPost(View):
 
             return HttpResponseRedirect(reverse(
                 'post_detail', args=[post.slug]))
-
-        # Renders the new Alert page if form is not valid
         return render(request, 'new_post.html', {'form': form})
 
 # Deletes an Alert
@@ -125,9 +122,7 @@ class DeletePost(View):
 
     def post(self, request, slug):
         post = Post.objects.get(slug=slug)
-        # Authorizes author to delete the Alert
         if request.user == post.author:
-            # Deletes the Alert and redirects to Home Page
             post.delete()
             return redirect('home')
         else:
