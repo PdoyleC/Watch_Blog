@@ -27,6 +27,16 @@
 
 ## Features
 
+## Languages Used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML/)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+
+
+
 ## Deplyoment
 
 The website uses [ElephantSQL](https://www.elephantsql.com/) for its database.
