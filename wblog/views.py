@@ -1,5 +1,6 @@
 import uuid
 from cloudinary.uploader import upload
+from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
@@ -108,6 +109,7 @@ class NewPost(View):
             post.slug = "{}-{}".format(slugify(post.title), unique_id)
             post.status = 1
             post.save()
+            messages.success(request, 'Post added successfully!')
 
             return HttpResponseRedirect(reverse(
                 'post_detail', args=[post.slug]))
@@ -145,6 +147,8 @@ class EditPost(View):
                     edited_post.featured_image = uploaded_image['url']
 
                 edited_post.save()
+                messages.success(request, 'Your post has successfully been' +
+                                 ' edited!')
                 return redirect('post_detail', slug=edited_post.slug)
             else:
                 return render(request, 'edit_page.html', {
@@ -164,6 +168,8 @@ class DeletePost(View):
         post = Post.objects.get(slug=slug)
         if request.user == post.author:
             post.delete()
+            messages.success(
+                request, 'Your post has successfully been deleted!')
             return redirect('home')
         else:
             return redirect('post_detail', slug=slug)
