@@ -1,4 +1,5 @@
 import uuid
+from cloudinary.uploader import upload
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
@@ -76,7 +77,7 @@ class PostDetail(View):
             },
         )
 
-# Likes an Alert
+# Likes an Post
 
 
 class PostLike(View):
@@ -90,7 +91,7 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-# Creates a new Alert
+# Creates a new Post
 
 
 class NewPost(View):
@@ -112,7 +113,46 @@ class NewPost(View):
                 'post_detail', args=[post.slug]))
         return render(request, 'new_post.html', {'form': form})
 
-# Deletes an Alert
+# Edits an Post
+
+
+class EditPost(View):
+    def get(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+
+        if not request.user.is_authenticated:
+            return redirect('post_detail', slug=slug)
+        else:
+            form = NewPostForm(instance=post)
+            return render(request, 'edit_page.html', {
+                'form': form, 'post': post, 'editing': True})
+
+    def post(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+
+        if request.user == post.author:
+            form = NewPostForm(request.POST, instance=post)
+            if form.is_valid():
+                edited_post = form.save(commit=False)
+                unique_id = uuid.uuid4().hex[:5]
+                edited_post.slug = "{}-{}".format(
+                    slugify(post.title), unique_id)
+
+                # Enables editing of image
+                if 'featured_image' in request.FILES:
+                    edited_image = request.FILES['featured_image']
+                    uploaded_image = upload(edited_image)
+                    edited_post.featured_image = uploaded_image['url']
+
+                edited_post.save()
+                return redirect('post_detail', slug=edited_post.slug)
+            else:
+                return render(request, 'edit_page.html', {
+                    'form': form, 'post': post, 'editing': True})
+        else:
+            return redirect('post_detail', slug=slug)
+
+# Deletes an Post
 
 
 class DeletePost(View):

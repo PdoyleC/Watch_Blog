@@ -1,19 +1,13 @@
 # Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com/)**
 
-
 ## [Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
-
 
 ![Watch on wrist image](documentation/watch.jpg)
 
 ## **Purpose of the site**
-
 <p>This site is a blog style watch site, aimed at people interested in Watches and new Watches on the market.</p>
 
-
-
 ## Design
-
 <details>
 <summary>Watch Favicon Image</summary>
 
@@ -23,7 +17,6 @@
 - the watch logo was created in Publisher, and can be found in the documentation folder. 
 - Paint was used to design the image.
 - favicon was used for website image tab [Link](https://favicon.io/favicon-converter/)
-
 
 ## Features
 
@@ -39,8 +32,6 @@ For authenticated users it links to:
 
 ![NavBar image](documentation/navbar.png)
 </details>
-
-
 <details>
 <summary>NavBar Not signed in</summary>
 For authenticated users it links to:
@@ -52,7 +43,6 @@ For authenticated users it links to:
   
 ![NavBar not signed in image](documentation/navbarnotreg.png)
 </details>
-
 <details>
 <summary>Footer</summary>
 
@@ -60,7 +50,6 @@ For authenticated users it links to:
 
 ![Footer image](documentation/footer.png)
 </details>
-
 <details>
 <summary>About Page</summary>
 
@@ -68,14 +57,12 @@ For authenticated users it links to:
 
 ![About page image](documentation/aboutpage.png)
 </details>
-
 <details>
 <summary>Registration Page</summary>
 
 - Where new users are able to create an account to post an article. 
 ![Registration page image](documentation/regpage.png)
 </details>
-
 <details>
 <summary>Delete button</summary>
 
@@ -83,7 +70,6 @@ For authenticated users it links to:
 
 ![Delete image](documentation/delete.png)
 </details>
-
 <details>
 <summary>Delete Confirmation Page</summary>
 
@@ -92,7 +78,6 @@ For authenticated users it links to:
 ![Delete page image](documentation/deletepage.png)
 </details>
 
-
 ## Languages Used
 
 - [HTML](https://en.wikipedia.org/wiki/HTML/)
@@ -100,8 +85,6 @@ For authenticated users it links to:
 - [JavaScript](https://www.javascript.com/)
 - [Python](https://www.python.org/)
 - [Django](https://www.djangoproject.com/)
-
-
 
 ## Deplyoment
 
@@ -152,7 +135,8 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 
 ## Credits
 
-- Django Generic view documentation: [Django Generic view](https://docs.djangoproject.com/en/3.2/topics/class-based-views/generic-display/).
+- This website was built by following the walkthrough project Django Blog by Code Institute.
+- Dj-ango Generic view documentation: [Django Generic view](https://docs.djangoproject.com/en/3.2/topics/class-based-views/generic-display/).
 - Django admin site documentation: [Django admin site](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display).
 - Django URL dispatcher documentation: [Django URL dispatcher site](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request).
 - SummerNote, editor for the Posts: [SummerNote](https://summernote.org/).
@@ -166,7 +150,5 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 [Stack overflow L2](https://stackoverflow.com/questions/20410623/how-to-add-active-class-to-html-actionlink-in-asp-net-mvc),
 [Stack overflow L3](https://stackoverflow.com/questions/62451903/how-i-can-underline-the-current-page-inside-my-bootstrap-nav),
 [Stack overflow L4](https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page).
-
-
+- Code for deleting a post was used from [Stackoverflow](https://stackoverflow.com/questions/31843145/deleteview-with-confirmation-template-and-post-method).
 - Message Alerts when signed in and out in bootstrap [Message Alerts](https://ordinarycoders.com/blog/article/django-messages-framework).
-

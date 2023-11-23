@@ -16,7 +16,6 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-X_FRAME_OPTIONS = "SAMEORIGIN"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -35,7 +34,7 @@ DEBUG = False
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
-ALLOWED_HOSTS = ['watch-blog-1e2436fde037.herokuapp.com', 'localhost',
+ALLOWED_HOSTS = ['watch-blog-1e2436fde037.herokuapp.com', 'localhost', '8001-pdoylec-watch-blog-yifumhml4a.us2.codeanyapp.com',
                  '8000-pdoylec-watch-blog-yifumhml4a.us2.codeanyapp.com']
 
 # To prevent 500 errors during login and registration
