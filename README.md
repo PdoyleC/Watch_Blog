@@ -11,15 +11,26 @@
 <details>
 <summary>Watch Favicon Image</summary>
 
-![Watch on wrist image](documentation/paintfco.jpg)
-</details>
-
 - the watch logo was created in Publisher, and can be found in the documentation folder. 
 - Paint was used to design the image.
 - favicon was used for website image tab [Link](https://favicon.io/favicon-converter/)
+  
+
+![Watch on wrist image](documentation/paintfco.jpg)
+</details>
+
+
+<details>
+<summary>Database schema diagram</summary>
+
+This was completed using [DrawSQL](https://drawsql.app/)
+
+
+![Database structure](documentation/drawsql.png)
+
+</details>
 
 ## Features
-
 <details>
 <summary>NavBar</summary>
 For authenticated users it links to:
