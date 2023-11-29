@@ -143,6 +143,9 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 ## Security
 - The SECRET_KEY has been changed since the second commit / push to GitHut, and env.py placed into gitignore. 
 
+## Credits
+
+- Photos saved in Cloudinary and images taken by myself and images from [Pxhere](https://pxhere.com/),[Pexels](https://www.pexels.com/),[Unsplash](https://unsplash.com/).
 
 ## Credits
 
