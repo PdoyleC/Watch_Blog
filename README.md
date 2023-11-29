@@ -75,9 +75,9 @@ For authenticated users it links to:
 ![Registration page image](documentation/regpage.png)
 </details>
 <details>
-<summary>Delete button</summary>
+<summary>Edit & Delete button</summary>
 
-- Where users can delete a post that they have created, this is only visible if your the author of the post. 
+- Where users can Edit and delete a post that they have created, this is only visible if your the author of the post. 
 
 ![Delete image](documentation/delete.png)
 </details>
