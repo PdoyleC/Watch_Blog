@@ -1,4 +1,4 @@
-from .models import Comment, Post
+from .models import Comment, Post, Contact
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
@@ -21,3 +21,9 @@ class NewPostForm(forms.ModelForm):
                                                               'form-control'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
         }
+
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = "__all__"

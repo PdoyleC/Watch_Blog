@@ -29,6 +29,9 @@ class Migration(migrations.Migration):
                 ('status', models.IntegerField(choices=[(0, 'Draft'), (1, 'Published')], default=0)),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='blog_posts', to=settings.AUTH_USER_MODEL)),
                 ('likes', models.ManyToManyField(blank=True, related_name='blogpost_like', to=settings.AUTH_USER_MODEL)),
+                ('name', models.CharField(max_length=100)),
+                ('email', models.EmailField(max_length=254)),
+                ('subject', models.TextField()),
             ],
             options={
                 'ordering': ['-created_on'],
