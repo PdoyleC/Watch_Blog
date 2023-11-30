@@ -123,7 +123,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 ## Issues
 
 - SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
-- 
+- Tried to have a Conyact Us page on the site, but the was an issue with Elephant sql and a corrupt database.
 
 ## Technologies Used
 
