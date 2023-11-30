@@ -177,4 +177,4 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 
 ## Credits to Tutor support
 
-- The following tutors online at CI, guided and helped me during this project - Osin, John, Rebecca, Martin, Gemma, Joanne, jason, Kevin.
+- The following tutors online at CI, guided and helped me during this project - Osin, John, Rebecca, Martin, Gemma, Joanne, jason, Kevin, Sean.

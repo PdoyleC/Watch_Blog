@@ -57,16 +57,3 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
 
-
-class Contact(models.Model):
-    """
-    Contact model is used for each
-    contact submitted by the site user
-    """
-    name = models.CharField(max_length=100)
-    email = models.EmailField()
-    subject = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return str(self.name)
