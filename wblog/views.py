@@ -4,9 +4,9 @@ from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, VideoPost
 from django.utils.text import slugify
-from .forms import CommentForm, NewPostForm
+from .forms import CommentForm, NewPostForm, VideoPostForm
 
 
 # Post list view
@@ -103,6 +103,35 @@ class NewPost(View):
     def post(self, request):
         form = NewPostForm(request.POST, request.FILES)
         if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            unique_id = uuid.uuid4().hex[:5]
+            post.slug = "{}-{}".format(slugify(post.title), unique_id)
+            post.status = 1
+            post.save()
+            messages.success(request, 'Post added successfully!')
+
+            return HttpResponseRedirect(reverse(
+                'post_detail', args=[post.slug]))
+        return render(request, 'new_post.html', {'form': form})
+
+
+class NewvideoPost(View):
+    def get(self, request):
+        form = VideoPostForm()
+        return render(request, 'new_video.html', {'form': form})
+
+    def post(self, request):
+        form = VideoPostForm(request.POST, request.FILES)
+        if form.is_valid():
+            video_file = form.cleaned_data['video']
+            allowed_types = ['video/mp4', 'video/mpeg', 'video/quicktime']
+
+            if video_file.content_type not in allowed_types:
+                form.add_error(
+                    'video', 'Invalid video file format. Video files must be mp4, mpeg or quicktime files.')
+                return render(request, 'new_post.html', {'form': form})
+
             post = form.save(commit=False)
             post.author = request.user
             unique_id = uuid.uuid4().hex[:5]

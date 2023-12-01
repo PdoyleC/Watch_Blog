@@ -57,3 +57,14 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
 
+
+class VideoPost(Post):
+    video = CloudinaryField(
+        'video',
+        resource_type="video",
+        eager=[
+            {'max_width': 1080, 'max_height': 566,
+                'crop': "fill", 'audio_codec': "wav"}
+        ],
+        eager_async=True
+    )
