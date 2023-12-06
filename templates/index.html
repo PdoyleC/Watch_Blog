@@ -11,12 +11,18 @@
           <div class="card mb-4">
             <div class="card-body">
               <div class="image-container">
+                {% if "placeholder" in post.featured_image.url %}
+                <img class="card-img-top" src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699008222/watchservice_jjz2rh.png" />
+                {% else %}
+                <img class="card-img-top" src=" {{ post.featured_image.url }}" />
+                {% endif %}
+
                 <!-- {% if "placeholder" in post.featured_image.url %}
                 <img
                   class="card-img-top"
                   src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699008222/watchservice_jjz2rh.png"
                 />
-                {% endif %} -->
+                {% endif %}
                 {% if post.featured_image %}
                 <img src="{{ post.featured_image.url }}" alt="Image Post" class="card-img">
                 {% endif %}
@@ -28,7 +34,7 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                {% endif %}
+                {% endif %} -->
                 
               </div>
               <a href="{% url 'post_detail' post.slug  %}" class="post-link">
