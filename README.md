@@ -97,6 +97,57 @@ For authenticated users it links to:
 - [Python](https://www.python.org/)
 - [Django](https://www.djangoproject.com/)
 
+## Manual Testing
+- There are some features that are only visible when the user is logged in. 
+<details>
+<summary>Manual Testing</summary>
+
+**User Not Registered**
+
+- If there is no user logged in, The home page won't show Crate a post.
+- The user will be able to see a post entry but won't be able to add a comment.
+- The user isn't able to edit or deleted a post unless its a post that the user has created.
+  
+![Watch on wrist image](documentation/testing/notlogin.png)
+
+![Watch on wrist image](documentation/testing/notlogincom.png)
+
+
+**User Registered**
+
+- If a user is registered, they will be able to create a post.
+- If the user has created a post, that user will be able to edit and deleted there own post.
+- If the user isn't the creator of the post the user can't edit or deleted the post, only add coments.
+- Alert messages appear when a use has logged in, logged out, a comment added, a post is edited and a when a post is deleted
+
+![Watch on wrist image](documentation/testing/editingpost.png)
+
+- Message alerts appear in the bottom of the screen, and disappear after 5 seconds.
+
+![Watch on wrist image](documentation/testing/alerts.png)
+
+
+
+
+**Checks Completed**
+- The following check have been conpleted
+  
+![Watch on wrist image](documentation/testing/extestcheck.png)
+
+
+**Footer Links**
+
+- Footer links were tested and all sites opened on a new page/tab.
+
+![Watch on wrist image](documentation/testing/footerlinks.png)
+
+
+
+
+</details>
+
+
+
 ## Deplyoment
 
 The website uses [ElephantSQL](https://www.elephantsql.com/) for its database.
