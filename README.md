@@ -133,6 +133,7 @@ For authenticated users it links to:
 - The following check have been conpleted
   
 ![Watch on wrist image](documentation/testing/extestcheck.png)
+![Watch on wrist image](documentation/testing/extestcheck1.png)
 
 
 **Footer Links**

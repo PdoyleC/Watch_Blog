@@ -202,4 +202,3 @@ class DeletePost(View):
             return redirect('home')
         else:
             return redirect('post_detail', slug=slug)
-
