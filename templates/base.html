@@ -80,16 +80,27 @@
             </li>
             {% if user.is_authenticated %}
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Create a Post
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{% url 'new_post' %}">Write a Image Post</a></li>
-                    <li><a class="dropdown-item" href="{% url 'new_video_post' %}">Write a video Post</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'new_post' %}">Write a Post</a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Create a Post
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="{% url 'new_post' %}"
+                    >Write a Image Post</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'new_video_post' %}"
+                    >Write a video Post</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
