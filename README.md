@@ -188,6 +188,14 @@ For authenticated users it links to:
 | 2  |  Sign Up link clicked                    | Redirected to Sign Up page                                                | PASS  |
 | 3  |  Invalid Username/Password	            | Asked to enter correct username                                           | PASS  |
 
+|Test|     Create Post Page                     |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
+| 2  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
+
+
+Changed your mind? Go Back
+
 
 
 
