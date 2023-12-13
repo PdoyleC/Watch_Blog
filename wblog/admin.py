@@ -35,8 +35,8 @@ class VideoPostAdmin(SummernoteModelAdmin):
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'body', 'created_on')
-    search_fields = ('name', 'email', 'body')
+    list_display = ('name', 'email', 'subject', 'created_on')
+    search_fields = ('name', 'email', 'subject')
 
     def approve_contact(self, request, queryset):
         queryset.update(approved=True)
