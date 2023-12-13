@@ -176,6 +176,7 @@ For authenticated users it links to:
 | 3  |  Sign Up button	                        | Hover over, colour changes                                                | PASS  |
 | 4  |  Sign Up button clicked	                | Signed up and redirected to Blog home page                                | PASS  |
 
+
 |Test|     Logout Page                          |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Sign Out button                         | Hover over, colour changes                                                | PASS  |
@@ -187,6 +188,7 @@ For authenticated users it links to:
 | 1  |  Sign In button                          | Hover over, colour changes                                                | PASS  |
 | 2  |  Sign Up link clicked                    | Redirected to Sign Up page                                                | PASS  |
 | 3  |  Invalid Username/Password	            | Asked to enter correct username                                           | PASS  |
+
 
 |Test|     Create Post Page                     |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
