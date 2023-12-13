@@ -107,10 +107,13 @@ For authenticated users it links to:
 - If there is no user logged in, The home page won't show Crate a post.
 - The user will be able to see a post entry but won't be able to add a comment.
 - The user isn't able to edit or deleted a post unless its a post that the user has created.
-  
-![Watch on wrist image](documentation/testing/notlogin.png)
 
+<details>
+<summary>Login and Not Logged in Page</summary>
+
+![Watch on wrist image](documentation/testing/notlogin.png)
 ![Watch on wrist image](documentation/testing/notlogincom.png)
+</details>
 
 
 **User Registered**
@@ -118,29 +121,77 @@ For authenticated users it links to:
 - If a user is registered, they will be able to create a post.
 - If the user has created a post, that user will be able to edit and deleted there own post.
 - If the user isn't the creator of the post the user can't edit or deleted the post, only add coments.
-- Alert messages appear when a use has logged in, logged out, a comment added, a post is edited and a when a post is deleted
-
-![Watch on wrist image](documentation/testing/editingpost.png)
-
-- Message alerts appear in the bottom of the screen, and disappear after 5 seconds.
-
-![Watch on wrist image](documentation/testing/alerts.png)
-
-
-
+- Alert messages appear when a use has logged in, logged out, a comment added, a post is edited and a when a post is deleted.
 
 **Checks Completed**
 - The following check have been conpleted
   
-![Watch on wrist image](documentation/testing/extestcheck.png)
-![Watch on wrist image](documentation/testing/extestcheck1.png)
+
+|Test|       Action                             |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Login is Clicked                        |  Redirected to login page                                                 | PASS  |
+| 2  |  Watch Blog logo clicked on about page   |  Redirected to home page                                                  | PASS  |
+| 3  |  Register is Clicked	                    |  Redirected to Sign up page                                               | PASS  |
+| 4  |  Login is Clicked	                    |  Signed in and redirected to Blog home page                               | PASS  |
+| 5  |  Logout is clicked 	                    |  Redirected to Sign out page, sign out clicked, and sign out              | PASS  |
+| 6  |  Home page clicked post entry	        |  Directed to post entry.                                                  | PASS  |
+| 7  |  Bolg Post edit/delete post	            |  <details><summary>Not correct user, can't edit or delert post</summary><img src="./documentation/testing/notlogincom.png"></details>                              | PASS  |
+| 8  |  Create a Post	                        |  Redirected to create a post page                                         | PASS  |
+| 9  |  Create a Post page	                    |  No title entered, post button clicked, error field appears               | PASS  |
+| 10 |  Create a Post page	                    |  No Contect entered, post button clicked, error field appears             | PASS  |
+| 11 |  Create a Post page	                    |  No image entered, post button clicked,default image  appears in blog     | PASS  |
+| 12 |  Bolg Post edit, creator	                |  <details><summary>Edit button visible</summary><img src="./documentation/testing/editingpost.png"></details>                                                      | PASS  |
+| 13 |  Bolg Post delete, creator	            |  <details><summary>Delete button visible</summary><img src="./documentation/testing/editingpost.png"></details>                                                    | PASS  |
+| 14 |  Delete button clicked	                |  Confirmation button appears                                              | PASS  |
+| 15 |  Blog home page, comment icon clicked.	|  Redirect to blog post                                                    | PASS  |
+| 16 |  Comment icon	                        |  Correct number on blog page and home page                                | PASS  |
+| 17 |  Like heart button clicked on blog page	|  Increments number by 1                                                   | PASS  |
+| 18 |  heart icon	                            |  Correct number on blog page and home page                                | PASS  |
+| 19 |  Footer, clicking facebook icon	        |  <details><summary>Redirected to facebook</summary><img src="./documentation/testing/footerlinks.png"></details>                                                   | PASS  |
+| 20 |  Footer, clicking Twitter (x) icon	    |  <details><summary>Redirected to Twitter</summary><img src="./documentation/testing/footerlinks.png"></details>                                                | PASS  |
+| 21 |  Footer, clicking Github icon	        |  <details><summary>Redirected to Github</summary><img src="./documentation/testing/footerlinks.png"></details>                                                     | PASS  |
+| 22 |  Footer, clicking Instagram icon	        |  <details><summary>Redirected to Instagram</summary><img src="./documentation/testing/footerlinks.png"></details>                                                  | PASS  |
+| 23 |  Footer, clicking Youtube icon	        |  <details><summary>Redirected to Youtube</summary><img src="./documentation/testing/footerlinks.png"></details>                                                 | PASS  |
+| 24 |  Message alert for Signed in	            |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
+| 25 |  Message alert for Signed out	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
+| 26 |  Message alert for post edited	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
+| 27 |  Message alert for post deleted	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
+| 28 |  Message alert for comment added	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
+| 29 |  Next and Prev buttons	                |  Direct to next and Prevous pages                                         | PASS  |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
 
 
-**Footer Links**
+|Test|     Post Detail Page                     |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Edit button                             | Visable for authenticated user of post                                    | PASS  |
+| 2  |  Edit button                             | Isn't Visable for unauthenticated user of post                            | PASS  |
+| 3  |  Deleted button	                        | Visable for authenticated user of post                                    | PASS  |
+| 4  |  Deleted button	                        | Isn't Visable for unauthenticated user of post                            | PASS  |
+| 5  |  Add comment button 	                    | Visable for authenticated user of the site                                | PASS  |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
 
-- Footer links were tested and all sites opened on a new page/tab.
 
-![Watch on wrist image](documentation/testing/footerlinks.png)
+|Test|     Sign Up page                         |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Valid info, submitted                   | Redirected to blog                                                        | PASS  |
+| 2  |  Invalid info, submitted                 | Error message appears                                                     | PASS  |
+| 3  |  Sign Up button	                        | Hover over, colour changes                                                | PASS  |
+| 4  |  Sign Up button clicked	                | Signed up and redirected to Blog home page                                | PASS  |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+
+|Test|     Logout Page                          |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Sign Out button                         | Hover over, colour changes                                                | PASS  |
+| 2  |  Sign Up button clicked                  | Redirected to Blog home page, Alert message appears                       | PASS  |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+
+
+|Test|     Logout Page                          |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Sign In button                          | Hover over, colour changes                                                | PASS  |
+| 2  |  Sign Up link clicked                    | Redirected to Sign Up page                                                | PASS  |
+| 3  |  Invalid Username/Password	            | Asked to enter correct username                                           | PASS  |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
 
 
 
