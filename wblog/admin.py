@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment, VideoPost
+from .models import Post, Comment, Contact, VideoPost
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -31,3 +31,12 @@ class VideoPostAdmin(SummernoteModelAdmin):
     list_filter = ('status', 'created_on')
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content')
+
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'body', 'created_on')
+    search_fields = ('name', 'email', 'body')
+
+    def approve_contact(self, request, queryset):
+        queryset.update(approved=True)

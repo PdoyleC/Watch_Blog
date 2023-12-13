@@ -1,4 +1,4 @@
-from .models import Comment, Post, VideoPost
+from .models import Comment, Post, Contact, VideoPost
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
@@ -21,3 +21,9 @@ class VideoPostForm(forms.ModelForm):
     class Meta:
         model = VideoPost
         fields = ('title', 'video', 'content')
+
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = "__all__"

@@ -6,7 +6,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post, VideoPost
 from django.utils.text import slugify
-from .forms import CommentForm, NewPostForm, VideoPostForm
+from .forms import CommentForm, NewPostForm, VideoPostForm, ContactForm
 
 
 # Post list view
@@ -185,6 +185,23 @@ class EditPost(View):
         else:
             return redirect('post_detail', slug=slug)
 
+def contact(request):
+    submitted = False
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message has been sent!')
+            return HttpResponseRedirect('/contact?submitted=True')
+            # return redirect('home')
+    else:
+        form = ContactForm()
+        if 'submitted' in request.GET:
+            submitted = True
+    form = ContactForm()
+    return render(request, 'contact.html', {'form': form})
+
+    
 # Deletes an Post
 
 
