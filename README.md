@@ -158,7 +158,6 @@ For authenticated users it links to:
 | 27 |  Message alert for post deleted	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 28 |  Message alert for comment added	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 29 |  Next and Prev buttons	                |  Direct to next and Prevous pages                                         | PASS  |
-|----|------------------------------------------|---------------------------------------------------------------------------|-------|
 
 
 |Test|     Post Detail Page                     |   Result                                                                  |Done   |
@@ -168,7 +167,6 @@ For authenticated users it links to:
 | 3  |  Deleted button	                        | Visable for authenticated user of post                                    | PASS  |
 | 4  |  Deleted button	                        | Isn't Visable for unauthenticated user of post                            | PASS  |
 | 5  |  Add comment button 	                    | Visable for authenticated user of the site                                | PASS  |
-|----|------------------------------------------|---------------------------------------------------------------------------|-------|
 
 
 |Test|     Sign Up page                         |   Result                                                                  |Done   |
@@ -177,13 +175,11 @@ For authenticated users it links to:
 | 2  |  Invalid info, submitted                 | Error message appears                                                     | PASS  |
 | 3  |  Sign Up button	                        | Hover over, colour changes                                                | PASS  |
 | 4  |  Sign Up button clicked	                | Signed up and redirected to Blog home page                                | PASS  |
-|----|------------------------------------------|---------------------------------------------------------------------------|-------|
 
 |Test|     Logout Page                          |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Sign Out button                         | Hover over, colour changes                                                | PASS  |
 | 2  |  Sign Up button clicked                  | Redirected to Blog home page, Alert message appears                       | PASS  |
-|----|------------------------------------------|---------------------------------------------------------------------------|-------|
 
 
 |Test|     Logout Page                          |   Result                                                                  |Done   |
@@ -191,7 +187,7 @@ For authenticated users it links to:
 | 1  |  Sign In button                          | Hover over, colour changes                                                | PASS  |
 | 2  |  Sign Up link clicked                    | Redirected to Sign Up page                                                | PASS  |
 | 3  |  Invalid Username/Password	            | Asked to enter correct username                                           | PASS  |
-|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+
 
 
 
