@@ -18,7 +18,6 @@ class TestNewPostForm(TestCase):
         self.assertEquals(len(form.errors), 2)
 
 
-
 class TestCommentForm(TestCase):
 
     def test_add_post_valid(self):
@@ -32,4 +31,3 @@ class TestCommentForm(TestCase):
 
         self.assertFalse(form.is_valid())
         self.assertEquals(len(form.errors), 1)
-

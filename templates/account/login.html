@@ -17,7 +17,11 @@ In" %} {%endblock%} {%block content%}
   </div>
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <form class="login signupin_form" method="POST" action="{% url 'account_login' %}">
+      <form
+        class="login signupin_form"
+        method="POST"
+        action="{% url 'account_login' %}"
+      >
         {%csrf_token %} {{form.as_p }} {%if redirect_field_value %}
         <input
           type="hidden"
@@ -30,8 +34,12 @@ In" %} {%endblock%} {%block content%}
         </button>
       </form>
       <div class="col-x1-8 col-lg-8 col-md-8 col-sm-8 mt-2 offset-md-3">
-        <img src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699447712/watchparts.jpg_gqcvet.jpg" width="100%" />
-    </div>
+        <img
+          src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699447712/watchparts.jpg_gqcvet.jpg"
+          alt="watch image default"
+          width="100%"
+        />
+      </div>
     </div>
   </div>
 </div>
