@@ -194,9 +194,6 @@ For authenticated users it links to:
 | 2  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
 
 
-Changed your mind? Go Back
-
-
 
 
 
