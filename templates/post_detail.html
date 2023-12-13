@@ -1,6 +1,4 @@
-{%extends 'base.html' %}
-{%block content %}
-{%load crispy_forms_tags %}
+{%extends 'base.html' %} {%block content %} {%load crispy_forms_tags %}
 
 <div class="masthead">
   <div class="container">
@@ -26,31 +24,52 @@
           >Delete</a
         > -->
 
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-Delete
-</button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Delete
+        </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <!-- <div class="modal-header">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <!-- <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Post</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div> -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-signup" data-bs-dismiss="modal">Cancel Delete</button>
-        <!-- <button type="button" class="btn btn-danger">Delete</button> -->
-        <form action="{% url 'post_delete' post.slug %}" method="post">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-danger" aria-label="Confirm deletion of Alert">
-                Confirm Delete
-            </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-signup"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel Delete
+                </button>
+                <!-- <button type="button" class="btn btn-danger">Delete</button> -->
+                <form action="{% url 'post_delete' post.slug %}" method="post">
+                  {% csrf_token %}
+                  <button
+                    type="submit"
+                    class="btn btn-danger"
+                    aria-label="Confirm deletion of Alert"
+                  >
+                    Confirm Delete
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         {% endif %}
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
@@ -58,6 +77,7 @@ Delete
         {%if "placeholder" in post.featured_image.url %}
         <img
           src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699008222/watchservice_jjz2rh.png"
+          alt="watch image default"
           width="100%"
         />
         {%else %}
@@ -112,7 +132,8 @@ Delete
           </div>
           <div class="col-1">
             <strong class="text-secondary"
-              ><i class="far fa-comments"></i> {{ post.number_of_comments }}</strong
+              ><i class="far fa-comments"></i> {{ post.number_of_comments
+              }}</strong
             >
           </div>
         </div>
