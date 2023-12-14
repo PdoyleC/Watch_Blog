@@ -133,6 +133,18 @@ The website has been tested in the following browsers on desktop:
 
 Validator: [W3C Validator](https://validator.w3.org/).
 
+<details>
+<summary>W3C Validator Images</summary>
+
+![Watch on wrist image](documentation/testing/homeblog.png)
+![Watch on wrist image](documentation/testing/blogpost.png)
+![Watch on wrist image](documentation/testing/login.png)
+![Watch on wrist image](documentation/testing/logoutpage.png)
+![Watch on wrist image](documentation/testing/createapost.png)
+![Watch on wrist image](documentation/testing/contactpage.png)
+</details>
+
+
 #### CSS
 
 Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
