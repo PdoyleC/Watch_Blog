@@ -98,21 +98,33 @@ For authenticated users it links to:
 - [Django](https://www.djangoproject.com/)
 
 
-## Django
-<details>
-<summary>Post Image from Djanjo Admin</summary>
 
-![Post image](documentation/testing/postdjanjo.png)
-</details>
-
-<details>
-<summary>Contact Image from Djanjo Admin </summary>
-
-![Post image](documentation/testing/contactdjanjo.png)
-</details>
 
 
 ## Testing
+
+
+<details>
+<summary>Browsers compatibility </summary>
+
+The website has been tested in the following browsers on desktop:
+
+<details>
+<summary>Chrome Test </summary>
+
+![Post image](documentation/testing/chromotest.png)
+</details>
+<details>
+<summary>Fire Fox Test </summary>
+
+![Post image](documentation/testing/firefoxtest.png)
+</details>
+<details>
+<summary>Edge Test </summary>
+
+![Post image](documentation/testing/edgetest.png)
+</details>
+</details>
 
 <details>
 <summary>Validator Testing</summary>
@@ -137,9 +149,7 @@ Validator: [JSHint Validator](https://jshint.com/).
 
 
 
-<details>
-<summary>Automated Testing</summary>
-</details>
+
 
 <details>
 <summary>Manual Testing</summary>
@@ -171,6 +181,32 @@ Validator: [JSHint Validator](https://jshint.com/).
 - If the user has created a post, that user will be able to edit and deleted there own post.
 - If the user isn't the creator of the post the user can't edit or deleted the post, only add coments.
 - Alert messages appear when a use has logged in, logged out, a comment added, a post is edited and a when a post is deleted.
+
+**Image display**
+- Code was added to the default image in index.html and alt text appear instead of the image. There is a comparison in the image below.
+<details>
+<summary>Image error</summary>
+
+![Watch on wrist image](documentation/testing/watchalttest.png)
+</details>
+
+## Django
+
+<details>
+<summary>Post Image from Djanjo Admin</summary>
+
+![Post image](documentation/testing/postdjanjo.png)
+</details>
+
+- The users that has contacted the site are visible in Django admin page. 
+<details>
+<summary>Contact Image from Djanjo Admin </summary>
+
+![Post image](documentation/testing/contactdjanjo.png)
+![Post image](documentation/testing/giftestcontactusl.gif)
+
+</details>
+
 
 **Checks Completed**
 - The following check have been conpleted
@@ -244,11 +280,23 @@ Validator: [JSHint Validator](https://jshint.com/).
 | 1  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
 | 2  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
 
+</details>
 
+<details>
+<summary>Automated Testing</summary>
 
+<details>
+<summary>Auto tests coverage</summary>
 
+![Watch on wrist image](documentation/testing/autotest11.png)
+
+![Watch on wrist image](documentation/testing/coverage.png)
+
+![Watch on wrist image](documentation/testing/coveragehtml.png)
+ </details>
 
 </details>
+
 
 
 
@@ -286,13 +334,16 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 ![Watch on wrist image](documentation/contactwblog.png)
  </details>
 
-- 
-
+- After this I decided that it would be nice if the user could see a video of the watch. After adding the code to views,urls,admin and then running python3 migrate in the terminal. After this there was an issue with the video blog and it does not exist error, the same issue with the contact page previously. I got in contact with tutor assistance, after chatting with them it was decided to delete that migration file, then run migrate again, I was told that only the posts created in the blog would be deleted and not the whole project. I then realised that the issue with the contact page could have been solved the same way and I misunderstood the term deleted, and it wasn't the whole project that would be deleted. This could have saved a lot of time in me doing research and coding to upload videos. The mirgration file was deleted and a new superuser was created. New posts were added to the blog.
 <details>
-<summary>Error Images wblog_contact</summary>
+<summary>Error Images wblog_video</summary>
 
 ![Watch on wrist image](documentation/videowblog.png)
  </details>
+
+- After realising that I wouldn't have to deleted the whole project, I added the contact page to the site instead of adding videos, as feedback from the users is more valuable.to the site. 
+
+
 
 
 

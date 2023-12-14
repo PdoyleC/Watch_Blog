@@ -12,7 +12,7 @@
             <div class="card-body">
               <div class="image-container">
                 {% if "placeholder" in post.featured_image.url %}
-                <img class="card-img-top" src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699008222/watchservice_jjz2rh.png" />
+                <img class="card-img-top" src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699008222/watchservice_jjz2rh.png" alt="watch being fixed"/>
                 {% else %}
                 <img class="card-img-top" src=" {{ post.featured_image.url }}" />
                 {% endif %}                
@@ -23,12 +23,13 @@
                 <p class="card-text">{{ post.excerpt }}</p>
               </a>
               <hr />
-              <p class="card-text text-muted h6">
+                <p class="card-text text-muted h6">
                 Author: {{ post.author }} |
                 <i class="btn-like far fa-heart"></i>
                 {{ post.number_of_likes }} |
                 <a href="{% url 'post_detail' post.slug  %}" class="post-link"><i class="far fa-comments"></i>
-                {{ post.number_of_comments }}</p></a>
+                {{ post.number_of_comments }}</a>
+                </p>
             </div>
           </div>
         </div>
