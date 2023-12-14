@@ -97,11 +97,46 @@ For authenticated users it links to:
 - [Python](https://www.python.org/)
 - [Django](https://www.djangoproject.com/)
 
-## Manual Testing
-- There are some features that are only visible when the user is logged in. 
+
+## Testing
+
+<details>
+<summary>Validator Testing</summary>
+
+#### HTML
+
+Validator: [W3C Validator](https://validator.w3.org/).
+
+#### CSS
+
+Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
+
+#### Python 
+
+Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+### JavaScript
+
+Validator: [JSHint Validator](https://jshint.com/).
+
+</details>
+
+
+
+<details>
+<summary>Automated Testing</summary>
+</details>
+
 <details>
 <summary>Manual Testing</summary>
 
+**User Registered**
+- There are some features that are only visible when the user is logged in.
+- User can create a post.
+- User can edit there own post they created.
+- User can leave a comment.
+- User can delete there own post they created
+  
 **User Not Registered**
 
 - If there is no user logged in, The home page won't show Crate a post.

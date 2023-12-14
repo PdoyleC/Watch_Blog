@@ -195,7 +195,7 @@ def contact(request):
             form.save()
             messages.success(request, 'Your message has been sent!')
             return HttpResponseRedirect('/contact?submitted=True')
-            # return redirect('home')
+            return redirect('home')
     else:
         form = ContactForm()
         if 'submitted' in request.GET:
