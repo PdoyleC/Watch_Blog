@@ -14,7 +14,7 @@
                 {% if "placeholder" in post.featured_image.url %}
                 <img class="card-img-top" src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699008222/watchservice_jjz2rh.png" alt="watch being fixed"/>
                 {% else %}
-                <img class="card-img-top" src=" {{ post.featured_image.url }}" />
+                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="user posted image"/>
                 {% endif %}                
               </div>
               <a href="{% url 'post_detail' post.slug  %}" class="post-link">
