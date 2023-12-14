@@ -98,6 +98,20 @@ For authenticated users it links to:
 - [Django](https://www.djangoproject.com/)
 
 
+## Django
+<details>
+<summary>Post Image from Djanjo Admin</summary>
+
+![Post image](documentation/testing/postdjanjo.png)
+</details>
+
+<details>
+<summary>Contact Image from Djanjo Admin </summary>
+
+![Post image](documentation/testing/contactdjanjo.png)
+</details>
+
+
 ## Testing
 
 <details>
@@ -264,7 +278,25 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 ## Issues
 
 - SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
-- Tried to have a Conyact Us page on the site, but the was an issue with Elephant sql and a corrupt database.
+- I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. <mark>Images below in Error Images wblog_contact </mark>. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance I was told that the datadase was corrupted and that if it was to be fixed I would lose everthing that I had done. I decided not to go ahead and deleted everything and start the project again.
+<details>
+<summary>Error Images wblog_contact</summary>
+
+![Watch on wrist image](documentation/contactwblogerror.png)
+![Watch on wrist image](documentation/contactwblog.png)
+ </details>
+
+- 
+
+<details>
+<summary>Error Images wblog_contact</summary>
+
+![Watch on wrist image](documentation/videowblog.png)
+ </details>
+
+
+
+
 
 ## Technologies Used
 
