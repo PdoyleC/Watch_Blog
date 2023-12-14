@@ -129,7 +129,8 @@ class NewvideoPost(View):
 
             if video_file.content_type not in allowed_types:
                 form.add_error(
-                    'video', 'Invalid video file format. Video files must be mp4, mpeg or quicktime files.')
+                    'video', 'Invalid video file format.'
+                    + 'Video files must be mp4, mpeg or quicktime files.')
                 return render(request, 'new_post.html', {'form': form})
 
             post = form.save(commit=False)
@@ -185,6 +186,7 @@ class EditPost(View):
         else:
             return redirect('post_detail', slug=slug)
 
+
 def contact(request):
     submitted = False
     if request.method == "POST":
@@ -201,7 +203,7 @@ def contact(request):
     form = ContactForm()
     return render(request, 'contact.html', {'form': form})
 
-    
+
 # Deletes an Post
 
 

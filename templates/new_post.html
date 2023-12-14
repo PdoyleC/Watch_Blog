@@ -2,7 +2,7 @@
 {% block content %}
 <div class="container border-bottom">
   <div class="card-body">
-    <h2>Create New Image Post</h2>
+    <h2>Create New Post</h2>
     <div class="new-post">
       <form method="post" enctype="multipart/form-data">
         {% csrf_token %} {{ form.as_p }}
