@@ -133,29 +133,65 @@ The website has been tested in the following browsers on desktop:
 
 Validator: [W3C Validator](https://validator.w3.org/).
 
+| Page     | Validator                                                                                                    | Result |
+| -------- | ------------------------------------------------------------------------------------------------------------ | ------ |
+| Blog     | <details><summary>Blog</summary>![Home page](documentation/testing/homeblog.png)</details>                   |  PASS  |
+| Blog Post| <details><summary>Blog Post</summary>![Post](documentation/testing/blogpost.png)</details>                   |  PASS  |
+| Login    | <details><summary>Login</summary>![Login](documentation/testing/login.png)</details>                         |  PASS  |
+| Logout   | <details><summary>Logout</summary>![Logout](documentation/testing/logoutpage.png)</details>                  |  PASS  |
+| Create   | <details><summary>Create</summary>![Create post](documentation/testing/createapost.png)</details>            |  PASS  |
+| Contact  | <details><summary>Contact</summary>![contact page](documentation/testing/contactpage.png)</details>          |  PASS  |
+| Register | <details><summary>Register</summary>![Register page](documentation/testing/regpage.png)</details>            |  PASS  |
+
 <details>
 <summary>W3C Validator Images</summary>
 
-![Watch on wrist image](documentation/testing/homeblog.png)
-![Watch on wrist image](documentation/testing/blogpost.png)
-![Watch on wrist image](documentation/testing/login.png)
-![Watch on wrist image](documentation/testing/logoutpage.png)
-![Watch on wrist image](documentation/testing/createapost.png)
-![Watch on wrist image](documentation/testing/contactpage.png)
+![Home page](documentation/testing/homeblog.png)
+![Post](documentation/testing/blogpost.png)
+![Login](documentation/testing/login.png)
+![Logout](documentation/testing/logoutpage.png)
+![Create post](documentation/testing/createapost.png)
+![contact page](documentation/testing/contactpage.png)
+![Register page](documentation/testing/regpage.png)
 </details>
+
 
 
 #### CSS
 
 Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
+<details>
+<summary>CSS Validation Image</summary>
+
+![CSS validator](documentation/testing/css.png)
+</details>
 
 #### Python 
 
 Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 
+| File     | Validator                                                                                         | Result |
+| -------- | ------------------------------------------------------------------------------------------------- | ------ |
+| Models   | <details><summary>Models</summary>![Model test](documentation/testing/modelpy.png)</details>      |  PASS  |
+| Views    | <details><summary>Views</summary>![Views test](documentation/testing/viewspy.png)</details>       |  PASS  |
+| Forms    | <details><summary>Forms</summary>![Forms test](documentation/testing/formspy.png)</details>       |  PASS  |
+| Urls     | <details><summary>Urls</summary>![Home test](documentation/testing/urlpy.png)</details>           |  PASS  |
+| Admin    | <details><summary>Admin</summary>![Admin test](documentation/testing/adminpy.png)</details>       |  PASS  |
+| Settings | <details><summary>Settings</summary>![Setting test](documentation/testing/settings.png)</details> |  PASS  |
+
+Settings.py validation errors of line to long are from the original django configuration set up.
+
+
 ### JavaScript
 
 Validator: [JSHint Validator](https://jshint.com/).
+<details>
+<summary>JS Validation Image</summary>
+
+![JS Validation](documentation/testing/script.png)
+</details>
+
+script
 
 </details>
 
