@@ -75,13 +75,12 @@
       <div class="d-none d-md-block col-md-6 masthead-image">
         <!-- The featured image URL goes in the src attribute -->
         {%if "placeholder" in post.featured_image.url %}
-        <img
+        <img class="card-img-top"
           src="https://res.cloudinary.com/dpo8kigkj/image/upload/v1699008222/watchservice_jjz2rh.png"
           alt="watch image default"
-          width="100%"
         />
         {%else %}
-        <img src=" {{ post.featured_image.url }}" width="100%" alt="user posted image" />
+        <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="watch image user" />
         {%endif %}
       </div>
     </div>
