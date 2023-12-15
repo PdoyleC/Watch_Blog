@@ -1,16 +1,52 @@
-# Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com/)**
+Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com/)**
 
-## [Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
+[Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
 
 ![iamresponsive](documentation/iamresponsive.png)
 
-## **Purpose of the site**
+**Purpose of the site**
 This site is a blog style watch site, aimed at people interested in Watches and new Watches on the market.
 
+# Table of Contents
 
-## User Experience
+- [Table of Contents](#table-of-contents)
+- [User Experience](#user-experience)
+  - [Agile](#agile)
+  - [Users](#users)
+  - [Wireframe/Structure](#wireframestructure)
+- [Design](#design)
+  - [Favicon design](#favicon-design)
+  - [Database schema](#database-schema)
+  - [Buttons](#buttons)
+- [Features](#features)
+- [Languages Used](#languages-used)
+- [Django Admin](#django-admin)
+- [Testing](#testing)
+  - [Validator Testing](#validator-testing)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [JavaScript](#javascript)
+    - [Python](#python)
+- [Manual Testing](#manual-testing)
+  - [Checks Completed](#checks-completed)
+  - [WAVE](#wave)
+  - [Lighthouse](#lighthouse)
+- [Automated Testing](#automated-testing)
+- [Browsers compatibility](#browsers-compatibility)
+- [Deplyoment](#deplyoment)
+- [Issues](#issues)
+- [Technologies Used](#technologies-used)
+- [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
+- [Security](#security)
+- [Media](#media)
+- [Credits](#credits)
+- [Credits to Tutor support](#credits-to-tutor-support)
 
-### Agile
+
+
+# User Experience
+
+## Agile
 
 - Agile methodology was used for this project, starting from the planning stage and continuing until the final product. GitHub project was used to stay organized and keep track for the different issues being looked after [Kanban board](https://github.com/users/PdoyleC/projects/4/views/1).
 - Agile methodology was used to map and create user stories, each with there own fuction and list of tasks. 
@@ -25,13 +61,13 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 
 
 
-### Users
+## Users
 
 - I wanted the user to go straight to the blog, to see the watches and not to a about page. 
 - Users have full CRUD functionality, Create posts, Read post and comments, Update posts they've created and Delete posts they've created.
 - There're comments and likes feature also for each post, so users can interact with the blog.
 
-### Wireframe/Structure
+## Wireframe/Structure
 
 - The blog is divided into different pages, one page to post an article, one page to send a contact to the site owner, one page to view the blog, and others to sign in and out.
 - Wireframes were made using [balsamiq wireframes](https://balsamiq.com/wireframes/)
@@ -54,7 +90,9 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 
 
 
-## Design
+# Design
+
+## Favicon design
 <details>
 <summary>Watch Favicon Image</summary>
 
@@ -66,6 +104,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 ![Watch logo](documentation/paintfco.jpg)
 </details>
 
+## Database schema
 
 <details>
 <summary>Database schema diagram</summary>
@@ -77,7 +116,7 @@ This was completed using [DrawSQL](https://drawsql.app/)
 
 </details>
 
-### Buttons
+## Buttons
 - Edit and Delete buttons are coloured so there won't be mixed up. The deleted and the confirm deleted button are red to show the danger and importance on the button.
 
 ![buttons](documentation/buttons.png)
@@ -86,7 +125,7 @@ This was completed using [DrawSQL](https://drawsql.app/)
 
 
 
-## Features
+# Features
 <details>
 <summary>NavBar</summary>
 
@@ -148,7 +187,7 @@ For authenticated users it links to:
 ![Delete page image](documentation/deletepage.png)
 </details>
 
-## Languages Used
+# Languages Used
 
 - [HTML](https://en.wikipedia.org/wiki/HTML/)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
@@ -157,16 +196,40 @@ For authenticated users it links to:
 - [Django](https://www.djangoproject.com/)
 
 
+# Django Admin
+
+- The Django admin is a site area that you can use to create, view, update, and delete records.
+- In this area the site creator can view contacts,comments,posts.
+- The users that have contacted the site are visible in Django admin page, where the messages can be read.
+
+<details>
+<summary>Contact Image from Django Admin </summary>
+
+![Contact image](documentation/testing/contactdjanjo.png)
+![Contact gif](documentation/testing/giftestcontactusl.gif)
+</details>
+
+<details>
+<summary>Post Image from Django Admin</summary>
+
+![Post image](documentation/testing/postdjanjo.png)
+</details>
+
+<details>
+<summary>Comment Image from Django Admin</summary>
+
+![comments image](documentation/testing/commentsdjanjo.png)
+</details>
 
 
 
-## Testing
+# Testing
 
 
 
-### Validator Testing
+## Validator Testing
 
-#### HTML
+### HTML
 
 Validator: [W3C Validator](https://validator.w3.org/).
 
@@ -197,7 +260,7 @@ Validator: [W3C Validator](https://validator.w3.org/).
 
 
 
-#### CSS
+### CSS
 
 Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
 <details>
@@ -207,7 +270,7 @@ No errors or warnings to show for during the CSS Validator testing.
 ![CSS validator](documentation/testing/css.png)
 </details>
 
-#### JavaScript
+### JavaScript
 
 Validator: [JSHint Validator](https://jshint.com/).
 <details>
@@ -216,7 +279,7 @@ Validator: [JSHint Validator](https://jshint.com/).
 ![JS Validation](documentation/testing/script.png)
 </details>
 
-#### Python 
+### Python 
 
 Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 
@@ -275,35 +338,11 @@ Settings.py validation errors of line to long are from the original django confi
 ![Watch test](documentation/testing/watchalttest.png)
 </details>
 
-## Django
-
-- The Django admin is a site area that you can use to create, view, update, and delete records.
-- In this area the site creator can view contacts,comments,posts.
-- The users that have contacted the site are visible in Django admin page.
-
-<details>
-<summary>Contact Image from Djanjo Admin </summary>
-
-![Contact image](documentation/testing/contactdjanjo.png)
-![Contact gif](documentation/testing/giftestcontactusl.gif)
-</details>
-
-<details>
-<summary>Post Image from Djanjo Admin</summary>
-
-![Post image](documentation/testing/postdjanjo.png)
-</details>
-
-<details>
-<summary>Comment Image from Djanjo Admin</summary>
-
-![comments image](documentation/testing/commentsdjanjo.png)
-</details>
 
 
 
 
-**Checks Completed**
+## Checks Completed
 - The following check have been conpleted
   
 
@@ -361,7 +400,7 @@ Settings.py validation errors of line to long are from the original django confi
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Submint button                          | Hover over, colour changes                                                | PASS  |
 | 2  |  Submint button clicked                  | Message sends, Alert message appears                                      | PASS  |
-| 3  |  Submint button clicked                  | Djanjo admin app is updated with contact name, email and message          | PASS  |
+| 3  |  Submint button clicked                  | Django admin app is updated with contact name, email and message          | PASS  |
 
 
 |Test|     Logout Page                          |   Result                                                                  |Done   |
@@ -447,7 +486,7 @@ The website has been tested in the following browsers on desktop:
 
 
 
-## Deplyoment
+# Deplyoment
 
 The website uses [ElephantSQL](https://www.elephantsql.com/) for its database.
 
@@ -470,7 +509,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 - selected Deploy tab and clicked Main branch.
 - clicked on Open app.
 
-## Issues
+# Issues
 
 - SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
 - I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. <mark>Images below in Error Images wblog_contact </mark>. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance I was told that the datadase was corrupted and that if it was to be fixed I would lose everthing that I had done. I decided not to go ahead and deleted everything and start the project again.
@@ -496,7 +535,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 
 
 
-## Technologies Used
+# Technologies Used
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [Favicon.io](https://favicon.io/) has been used for the favicon.
@@ -505,20 +544,20 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 - [Font Awesome](https://fontawesome.com/icons) has been used for icons.
 - ElephantSQL has been used as database solution.
 
-### Frameworks, Libraries & Programs Used
+# Frameworks, Libraries & Programs Used
 - [Cloudinary](https://cloudinary.com/)  used to upload, store, manage, and link images.
 - [Django](https://www.djangoproject.com/) is a free Python-based web framework that encourages rapid development with model–template–views.
 - [Font Awesome](https://fontawesome.com/) is a font icons toolkit for aesthetic buttons and links.
 
 
-## Security
+# Security
 - The SECRET_KEY has been changed since the second commit / push to GitHut, and env.py placed into gitignore. 
 
-## Credits
+# Media
 
 - Photos saved in Cloudinary and images taken by myself and images from [Pxhere](https://pxhere.com/),[Pexels](https://www.pexels.com/),[Unsplash](https://unsplash.com/).
 
-## Credits
+# Credits
 
 - This website was built by following the walkthrough project Django Blog by Code Institute.
 - Dj-ango Generic view documentation: [Django Generic view](https://docs.djangoproject.com/en/3.2/topics/class-based-views/generic-display/).
@@ -543,9 +582,9 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 - Build a Social Media App with Django video Tutorial [Python Web Framework Tutorial](https://www.youtube.com/watch?v=xSUm6iMtREA)
 - Codemy.com- video Tutorial [Create A Simple Django Blog](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
 - Codemy.com- video Tutorial [Stack overflow](https://stackoverflow.com/questions/534839/how-to-create-a-guid-uuid-in-python)
+- Developer- Runnign tests for Django [developer](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing#how_to_run_the_tests)
 
-<https://stackoverflow.com/questions/534839/how-to-create-a-guid-uuid-in-python>
-
-## Credits to Tutor support
+# Credits to Tutor support
 
 - The following tutors online at CI, guided and helped me during this project - Osin, John, Rebecca, Martin, Gemma, Joanne, jason, Kevin, Sean.
+- My mentor Rory Patrick Sheridan for good briefings, tips and feedback.
