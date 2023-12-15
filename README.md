@@ -164,8 +164,7 @@ For authenticated users it links to:
 
 
 
-<details>
-<summary>Validator Testing</summary>
+### Validator Testing
 
 #### HTML
 
@@ -203,8 +202,18 @@ Validator: [W3C Validator](https://validator.w3.org/).
 Validator: [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator).
 <details>
 <summary>CSS Validation Image</summary>
+No errors or warnings to show for during the CSS Validator testing.
 
 ![CSS validator](documentation/testing/css.png)
+</details>
+
+#### JavaScript
+
+Validator: [JSHint Validator](https://jshint.com/).
+<details>
+<summary>JS Validation Image</summary>
+
+![JS Validation](documentation/testing/script.png)
 </details>
 
 #### Python 
@@ -223,24 +232,12 @@ Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 Settings.py validation errors of line to long are from the original django configuration set up and are left for readability.
 
 
-### JavaScript
-
-Validator: [JSHint Validator](https://jshint.com/).
-<details>
-<summary>JS Validation Image</summary>
-
-![JS Validation](documentation/testing/script.png)
-</details>
-
-
-</details>
 
 
 
 
 
-<details>
-<summary>Manual Testing</summary>
+# Manual Testing
 
 **User Registered**
 - There are some features that are only visible when the user is logged in.
@@ -413,10 +410,7 @@ Validator: [JSHint Validator](https://jshint.com/).
 
 
 
-</details>
-
-<details>
-<summary>Automated Testing</summary>
+# Automated Testing
 
 - Some code was written for automated testing, more research and learning needs to go into this so I can learn how to code the tests and improve the auto testing function. 
 
@@ -428,10 +422,9 @@ Validator: [JSHint Validator](https://jshint.com/).
 ![coverage html  image](documentation/testing/coveragehtml.png)
 
 
-</details>
 
-<details>
-<summary>Browsers compatibility </summary>
+
+# Browsers compatibility
 
 The website has been tested in the following browsers on desktop:
 
@@ -449,7 +442,6 @@ The website has been tested in the following browsers on desktop:
 <summary>Edge Test </summary>
 
 ![Edge image](documentation/testing/edgetest.png)
-</details>
 </details>
 
 
