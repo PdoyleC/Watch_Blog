@@ -226,7 +226,6 @@ Validator: [JSHint Validator](https://jshint.com/).
 ![JS Validation](documentation/testing/script.png)
 </details>
 
-script
 
 </details>
 
@@ -359,7 +358,7 @@ script
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Submint button                          | Hover over, colour changes                                                | PASS  |
 | 2  |  Submint button clicked                  | Message sends, Alert message appears                                      | PASS  |
-| 3  |  Submint button clicked                  | <details><summary>Djanjo admin app is updated with contact name and message</summary><img src=".documentation/testing/commentsdjanjo.png"></details>                 | PASS  |
+| 3  |  Submint button clicked                  | Djanjo admin app is updated with contact name, email and message          | PASS  |
 
 
 |Test|     Logout Page                          |   Result                                                                  |Done   |
