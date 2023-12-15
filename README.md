@@ -369,9 +369,9 @@ Settings.py validation errors of line to long are from the original Django confi
 | 18 |  heart icon	                            |  Correct number on blog page and home page                                | PASS  |
 | 19 |  Footer, clicking facebook icon	        |  <details><summary>Redirected to Facebook</summary><img src="./documentation/testing/footerlinks.png"></details>                                                   | PASS  |
 | 20 |  Footer, clicking Twitter (x) icon	    |  <details><summary>Redirected to Twitter</summary><img src="./documentation/testing/footerlinks.png"></details>                                                | PASS  |
-| 21 |  Footer, clicking Github icon	        |  <details><summary>Redirected to GitHub</summary><img src="./documentation/testing/footerlinks.png"></details>                                                     | PASS  |
+| 21 |  Footer, clicking GitHub icon	        |  <details><summary>Redirected to GitHub</summary><img src="./documentation/testing/footerlinks.png"></details>                                                     | PASS  |
 | 22 |  Footer, clicking Instagram icon	        |  <details><summary>Redirected to Instagram</summary><img src="./documentation/testing/footerlinks.png"></details>                                                  | PASS  |
-| 23 |  Footer, clicking Youtube icon	        |  <details><summary>Redirected to YouTube</summary><img src="./documentation/testing/footerlinks.png"></details>                                                 | PASS  |
+| 23 |  Footer, clicking YouTube icon	        |  <details><summary>Redirected to YouTube</summary><img src="./documentation/testing/footerlinks.png"></details>                                                 | PASS  |
 | 24 |  Message alert for Signed in	            |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 25 |  Message alert for Signed out	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 26 |  Message alert for post edited	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
@@ -440,7 +440,7 @@ Settings.py validation errors of line to long are from the original Django confi
 * Best practices - how does the site conform to industry best practices.
 * SEO - search engine optimization. Is the site optimized for search engine result rankings.
 
-- Performance is down to the images and there size.
+- Performance is down to the images and their size.
 
 <details>
 <summary>Lighthouse Testing Image</summary>
@@ -492,8 +492,8 @@ The website has been tested in the following browsers on desktop:
 The website uses [ElephantSQL](https://www.elephantsql.com/) for its database.
 
 - I signed up with my GitHub account.
-- I created a new instance and the free plan was selected and Europe was selected as the region.
-- Once created I was able to access the url and password for the database.
+- I created a new instance and the free plan was selected, and Europe was selected as the region.
+- Once created I was able to access the  and password for the database.
 
 The website uses [Cloudinary](https://cloudinary.com/) for storing images.
 
@@ -513,7 +513,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 # Issues
 
 - SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
-- I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. <mark>Images below in Error Images wblog_contact </mark>. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance I was told that the datadase was corrupted and that if it was to be fixed I would lose everything that I had done. I decided not to go ahead and deleted everything and start the project again.
+- I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. <mark>Images below in Error Images wblog_contact </mark>. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance, I was told that the database was corrupted and that if it was to be fixed, I would lose everything that I had done. I decided not to go ahead and deleted everything and start the project again.
 <details>
 <summary>Error Images wblog_contact</summary>
 
@@ -521,7 +521,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 ![contact wblog image](documentation/contactwblog.png)
  </details>
 
-- After this I decided that it would be nice if the user could see a video of the watch. After adding the code to views,urls,admin and then running python3 migrate in the terminal. After this there was an issue with the video blog and it does not exist error, the same issue with the contact page previously. I got in contact with tutor assistance, after chatting with them it was decided to delete that migration file, then run migrate again, I was told that only the posts created in the blog would be deleted and not the whole project. I then realised that the issue with the contact page could have been solved the same way and I misunderstood the term deleted, and it wasn't the whole project that would be deleted. This could have saved a lot of time in me doing research and coding to upload videos. The migration file was deleted and a new superuser was created. New posts were added to the blog.
+- After this I decided that it would be nice if the user could see a video of the watch. After adding the code to views,urls and admin, and then running python3 migrate in the terminal. After this there was an issue with the video blog and it does not exist error, the same issue with the contact page previously. I got in contact with tutor assistance, after chatting with them it was decided to delete that migration file, then run migrate again, I was told that only the posts created in the blog would be deleted and not the whole project. I then realised that the issue with the contact page could have been solved the same way and I misunderstood the term deleted, and it wasn't the whole project that would be deleted. This could have saved a lot of time in me doing research and coding to upload videos. The migration file was deleted and a new superuser was created. New posts were added to the blog.
 <details>
 <summary>Error Images wblog_video</summary>
 
@@ -552,7 +552,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 
 
 # Security
-- The SECRET_KEY has been changed since the second commit / push to GitHut, and env.py placed into gitignore. 
+- The SECRET_KEY has been changed since the second commit / push to GitHub, and env.py placed into gitignore. 
 
 # Media
 
