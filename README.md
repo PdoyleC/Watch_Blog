@@ -2,7 +2,7 @@
 
 ## [Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
 
-![Watch ](documentation/watch.jpg)
+![iamresponsive](documentation/iamresponsive.png)
 
 ## **Purpose of the site**
 This site is a blog style watch site, aimed at people interested in Watches and new Watches on the market.
@@ -12,8 +12,10 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 
 ### Agile
 
-- Agile methodology was used for this project, starting from the planning stage and continuing until the final product. GitHub project was used to stay organized and keep track for the different issues bein glooked after [Kanban board](https://github.com/users/PdoyleC/projects/4/views/1).
-- Agile methodology
+- Agile methodology was used for this project, starting from the planning stage and continuing until the final product. GitHub project was used to stay organized and keep track for the different issues being looked after [Kanban board](https://github.com/users/PdoyleC/projects/4/views/1).
+- Agile methodology was used to map and create user stories, each with there own fuction and list of tasks. 
+- GitHub projects Kanban was used to keep track of the project. It is divided into To Start, In Progress and Completed. [Link](https://github.com/users/PdoyleC/projects/4/views/1) to Kanban board.
+
 <details>
 <summary>Project Issues Image</summary>
 
@@ -29,9 +31,11 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 - Users have full CRUD functionality, Create posts, Read post and comments, Update posts they've created and Delete posts they've created.
 - There're comments and likes feature also for each post, so users can interact with the blog.
 
-### Wireframe
+### Wireframe/Structure
 
+- The blog is divided into different pages, one page to post an article, one page to send a contact to the site owner, one page to view the blog, and others to sign in and out.
 - Wireframes were made using [balsamiq wireframes](https://balsamiq.com/wireframes/)
+- All users can view the blog. Only authenticated user can create, edit, add comments and deleted posts.
 
 <details>
 <summary>Wireframes Image</summary>
@@ -85,6 +89,8 @@ This was completed using [DrawSQL](https://drawsql.app/)
 ## Features
 <details>
 <summary>NavBar</summary>
+
+- The navigation bar designed using Bootstrap and optimized for full responsiveness.
 For authenticated users it links to:
 
 - Home Page
@@ -379,20 +385,48 @@ Validator: [JSHint Validator](https://jshint.com/).
 | 1  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
 | 2  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
 
+
+## WAVE
+
+- I used [WAVE](https://wave.webaim.org/)  (Web Accessibility Evaluation Tool) in chrome developer tools to test the website accessibility. WAVE is a tool that identifies ways to make a webpage more accessible to people with disabilities. WAVE scans the website for on-page and technical accessibility issues and errors to bring the site in line with recognized accessibility standards, like the Web Content Accessibility Guidelines (WCAG).
+<details>
+<summary>Wave Testing Image</summary>
+
+![waveblog image](documentation/testing/waveblog.png)
+</details>
+
+## Lighthouse
+
+* Lighthouse in chrome developer tool, was used to test the website for:
+* Performance - how the page performs whilst loading.
+* Accessibility - how accessible is the site for all users and how can it be improved.
+* Best practices - how does the site conform to industry best practices.
+* SEO - search engine optimization. Is the site optimized for search engine result rankings.
+
+- Performance is down to the images and there size.
+
+<details>
+<summary>Lighthouse Testing Image</summary>
+
+![waveblog image](documentation/testing/lighthouse.png)
+</details>
+
+
+
 </details>
 
 <details>
 <summary>Automated Testing</summary>
 
-<details>
-<summary>Auto tests coverage</summary>
+- Some code was written for automated testing, more research and learning needs to go into this so I can learn how to code the tests and improve the auto testing function. 
 
-![Watch on wrist image](documentation/testing/autotest11.png)
 
-![Watch on wrist image](documentation/testing/coverage.png)
+![autotest11 image](documentation/testing/autotest11.png)
 
-![Watch on wrist image](documentation/testing/coveragehtml.png)
- </details>
+![coverage image](documentation/testing/coverage.png)
+
+![coverage html  image](documentation/testing/coveragehtml.png)
+
 
 </details>
 
@@ -451,18 +485,18 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 <details>
 <summary>Error Images wblog_contact</summary>
 
-![Watch on wrist image](documentation/contactwblogerror.png)
-![Watch on wrist image](documentation/contactwblog.png)
+![contact wblog error image](documentation/contactwblogerror.png)
+![contact wblog image](documentation/contactwblog.png)
  </details>
 
 - After this I decided that it would be nice if the user could see a video of the watch. After adding the code to views,urls,admin and then running python3 migrate in the terminal. After this there was an issue with the video blog and it does not exist error, the same issue with the contact page previously. I got in contact with tutor assistance, after chatting with them it was decided to delete that migration file, then run migrate again, I was told that only the posts created in the blog would be deleted and not the whole project. I then realised that the issue with the contact page could have been solved the same way and I misunderstood the term deleted, and it wasn't the whole project that would be deleted. This could have saved a lot of time in me doing research and coding to upload videos. The mirgration file was deleted and a new superuser was created. New posts were added to the blog.
 <details>
 <summary>Error Images wblog_video</summary>
 
-![Watch on wrist image](documentation/videowblog.png)
+![videowblog image](documentation/videowblog.png)
  </details>
 
-- After realising that I wouldn't have to deleted the whole project, I added the contact page to the site instead of adding videos, as feedback from the users is more valuable.to the site. 
+- After realising that I wouldn't have to deleted the whole project, I added the contact page to the site instead of adding videos, as feedback from the users is more valuable to the site. This could have saved me a lot of time working on other areas of the project. 
 
 
 
