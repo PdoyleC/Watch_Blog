@@ -2,10 +2,53 @@
 
 ## [Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
 
-![Watch on wrist image](documentation/watch.jpg)
+![Watch ](documentation/watch.jpg)
 
 ## **Purpose of the site**
-<p>This site is a blog style watch site, aimed at people interested in Watches and new Watches on the market.</p>
+This site is a blog style watch site, aimed at people interested in Watches and new Watches on the market.
+
+
+## User Experience
+
+### Agile
+
+- Agile methodology was used for this project, starting from the planning stage and continuing until the final product. GitHub project was used to stay organized and keep track for the different issues bein glooked after [Kanban board](https://github.com/users/PdoyleC/projects/4/views/1).
+- Agile methodology
+<details>
+<summary>Project Issues Image</summary>
+
+![projectissues wireframes](documentation/projectissues.png)
+</details>
+
+
+
+
+### Users
+
+- I wanted the user to go straight to the blog, to see the watches and not to a about page. 
+- Users have full CRUD functionality, Create posts, Read post and comments, Update posts they've created and Delete posts they've created.
+- There're comments and likes feature also for each post, so users can interact with the blog.
+
+### Wireframe
+
+- Wireframes were made using [balsamiq wireframes](https://balsamiq.com/wireframes/)
+
+<details>
+<summary>Wireframes Image</summary>
+
+![homewire wireframes](documentation/wireframes/homewire.png)
+![createwire wireframes](documentation/wireframes/createwire.png)
+![postwire wireframes](documentation/wireframes/postwire.png)
+![siginoutwire wireframes](documentation/wireframes/siginoutwire.png)
+![aboutwire wireframes](documentation/wireframes/aboutwire.png)
+</details>
+
+
+
+
+
+
+
 
 ## Design
 <details>
@@ -16,7 +59,7 @@
 - favicon was used for website image tab [Link](https://favicon.io/favicon-converter/)
   
 
-![Watch on wrist image](documentation/paintfco.jpg)
+![Watch logo](documentation/paintfco.jpg)
 </details>
 
 
@@ -29,6 +72,15 @@ This was completed using [DrawSQL](https://drawsql.app/)
 ![Database structure](documentation/drawsql.png)
 
 </details>
+
+### Buttons
+- Edit and Delete buttons are coloured so there won't be mixed up. The deleted and the confirm deleted button are red to show the danger and importance on the button.
+
+![buttons](documentation/buttons.png)
+
+![buttons](documentation/deletepage.png)
+
+
 
 ## Features
 <details>
@@ -72,7 +124,8 @@ For authenticated users it links to:
 <summary>Registration Page</summary>
 
 - Where new users are able to create an account to post an article. 
-![Registration page image](documentation/regpage.png)
+![Registration page image](documentation/regblogpage.png)
+
 </details>
 <details>
 <summary>Edit & Delete button</summary>
@@ -104,27 +157,6 @@ For authenticated users it links to:
 ## Testing
 
 
-<details>
-<summary>Browsers compatibility </summary>
-
-The website has been tested in the following browsers on desktop:
-
-<details>
-<summary>Chrome Test </summary>
-
-![Post image](documentation/testing/chromotest.png)
-</details>
-<details>
-<summary>Fire Fox Test </summary>
-
-![Post image](documentation/testing/firefoxtest.png)
-</details>
-<details>
-<summary>Edge Test </summary>
-
-![Post image](documentation/testing/edgetest.png)
-</details>
-</details>
 
 <details>
 <summary>Validator Testing</summary>
@@ -132,6 +164,9 @@ The website has been tested in the following browsers on desktop:
 #### HTML
 
 Validator: [W3C Validator](https://validator.w3.org/).
+
+- No errors or warnings to show for during the W3C Validator testing.
+
 
 | Page     | Validator                                                                                                    | Result |
 | -------- | ------------------------------------------------------------------------------------------------------------ | ------ |
@@ -179,7 +214,7 @@ Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 | Admin    | <details><summary>Admin</summary>![Admin test](documentation/testing/adminpy.png)</details>       |  PASS  |
 | Settings | <details><summary>Settings</summary>![Setting test](documentation/testing/settings.png)</details> |  PASS  |
 
-Settings.py validation errors of line to long are from the original django configuration set up.
+Settings.py validation errors of line to long are from the original django configuration set up and are left for readability.
 
 
 ### JavaScript
@@ -218,8 +253,8 @@ script
 <details>
 <summary>Login and Not Logged in Page</summary>
 
-![Watch on wrist image](documentation/testing/notlogin.png)
-![Watch on wrist image](documentation/testing/notlogincom.png)
+![not Logged in](documentation/testing/notlogin.png)
+![not Logged in](documentation/testing/notlogincom.png)
 </details>
 
 
@@ -235,10 +270,21 @@ script
 <details>
 <summary>Image error</summary>
 
-![Watch on wrist image](documentation/testing/watchalttest.png)
+![Watch test](documentation/testing/watchalttest.png)
 </details>
 
 ## Django
+
+- The Django admin is a site area that you can use to create, view, update, and delete records.
+- In this area the site creator can view contacts,comments,posts.
+- The users that have contacted the site are visible in Django admin page.
+
+<details>
+<summary>Contact Image from Djanjo Admin </summary>
+
+![Contact image](documentation/testing/contactdjanjo.png)
+![Contact gif](documentation/testing/giftestcontactusl.gif)
+</details>
 
 <details>
 <summary>Post Image from Djanjo Admin</summary>
@@ -246,14 +292,13 @@ script
 ![Post image](documentation/testing/postdjanjo.png)
 </details>
 
-- The users that has contacted the site are visible in Django admin page. 
 <details>
-<summary>Contact Image from Djanjo Admin </summary>
+<summary>Comment Image from Djanjo Admin</summary>
 
-![Post image](documentation/testing/contactdjanjo.png)
-![Post image](documentation/testing/giftestcontactusl.gif)
-
+![comments image](documentation/testing/commentsdjanjo.png)
 </details>
+
+
 
 
 **Checks Completed**
@@ -310,6 +355,13 @@ script
 | 4  |  Sign Up button clicked	                | Signed up and redirected to Blog home page                                | PASS  |
 
 
+|Test|     Contact Page                         |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1  |  Submint button                          | Hover over, colour changes                                                | PASS  |
+| 2  |  Submint button clicked                  | Message sends, Alert message appears                                      | PASS  |
+| 3  |  Submint button clicked                  | <details><summary>Djanjo admin app is updated with contact name and message</summary><img src=".documentation/testing/commentsdjanjo.png"></details>                 | PASS  |
+
+
 |Test|     Logout Page                          |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Sign Out button                         | Hover over, colour changes                                                | PASS  |
@@ -343,6 +395,28 @@ script
 ![Watch on wrist image](documentation/testing/coveragehtml.png)
  </details>
 
+</details>
+
+<details>
+<summary>Browsers compatibility </summary>
+
+The website has been tested in the following browsers on desktop:
+
+<details>
+<summary>Chrome Test </summary>
+
+![Chrome image](documentation/testing/chromotest.png)
+</details>
+<details>
+<summary>Fire Fox Test </summary>
+
+![Fire Fox image](documentation/testing/firefoxtest.png)
+</details>
+<details>
+<summary>Edge Test </summary>
+
+![Edge image](documentation/testing/edgetest.png)
+</details>
 </details>
 
 
