@@ -7,9 +7,8 @@ Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com/)**
 **Purpose of the site**
 This site is a blog style watch site, aimed at people interested in Watches and new Watches on the market.
 
-# Table of Contents
+Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [User Experience](#user-experience)
   - [Agile](#agile)
   - [Users](#users)
@@ -33,7 +32,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
   - [Lighthouse](#lighthouse)
 - [Automated Testing](#automated-testing)
 - [Browsers compatibility](#browsers-compatibility)
-- [Deplyoment](#deplyoment)
+- [Deployment](#deployment)
 - [Issues](#issues)
 - [Technologies Used](#technologies-used)
 - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
@@ -49,7 +48,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 ## Agile
 
 - Agile methodology was used for this project, starting from the planning stage and continuing until the final product. GitHub project was used to stay organized and keep track for the different issues being looked after [Kanban board](https://github.com/users/PdoyleC/projects/4/views/1).
-- Agile methodology was used to map and create user stories, each with there own fuction and list of tasks. 
+- Agile methodology was used to map and create user stories, each with their own function and list of tasks.
 - GitHub projects Kanban was used to keep track of the project. It is divided into To Start, In Progress and Completed. [Link](https://github.com/users/PdoyleC/projects/4/views/1) to Kanban board.
 
 <details>
@@ -65,7 +64,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 
 - I wanted the user to go straight to the blog, to see the watches and not to a about page. 
 - Users have full CRUD functionality, Create posts, Read post and comments, Update posts they've created and Delete posts they've created.
-- There're comments and likes feature also for each post, so users can interact with the blog.
+- There're comments and likes features also for each post, so users can interact with the blog.
 
 ## Wireframe/Structure
 
@@ -96,7 +95,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 <details>
 <summary>Watch Favicon Image</summary>
 
-- the watch logo was created in Publisher, and can be found in the documentation folder. 
+- the watch logo was created in Publisher, and can be found in the documentation folder.
 - Paint was used to design the image.
 - favicon was used for website image tab [Link](https://favicon.io/favicon-converter/)
   
@@ -136,7 +135,7 @@ For authenticated users it links to:
 - About page
 - Write a Post Page
 - Logout Page
-- Welcome User Name display
+- Welcome Username display
 
 ![NavBar image](documentation/navbar.png)
 </details>
@@ -154,7 +153,7 @@ For authenticated users it links to:
 <details>
 <summary>Footer</summary>
 
-- Links to facebook, Twitter, GitHub, Instragram and Youtube
+- Links to Facebook, Twitter, GitHub, Instagram and YouTube
 
 ![Footer image](documentation/footer.png)
 </details>
@@ -175,7 +174,7 @@ For authenticated users it links to:
 <details>
 <summary>Edit & Delete button</summary>
 
-- Where users can Edit and delete a post that they have created, this is only visible if your the author of the post. 
+- Where users can Edit and delete a post that they have created, this is only visible if you're the author of the post. 
 
 ![Delete image](documentation/delete.png)
 </details>
@@ -199,7 +198,7 @@ For authenticated users it links to:
 # Django Admin
 
 - The Django admin is a site area that you can use to create, view, update, and delete records.
-- In this area the site creator can view contacts,comments,posts.
+- In this area the site creator can view contacts, comments and posts.
 - The users that have contacted the site are visible in Django admin page, where the messages can be read.
 
 <details>
@@ -288,12 +287,14 @@ Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 | Models   | <details><summary>Models</summary>![Model test](documentation/testing/modelpy.png)</details>      |  PASS  |
 | Views    | <details><summary>Views</summary>![Views test](documentation/testing/viewspy.png)</details>       |  PASS  |
 | Forms    | <details><summary>Forms</summary>![Forms test](documentation/testing/formspy.png)</details>       |  PASS  |
-| Urls     | <details><summary>Urls</summary>![Home test](documentation/testing/urlpy.png)</details>           |  PASS  |
+| Urls     | <details><summary>URLs</summary>![Home test](documentation/testing/urlpy.png)</details>           |  PASS  |
 | Admin    | <details><summary>Admin</summary>![Admin test](documentation/testing/adminpy.png)</details>       |  PASS  |
 | Settings | <details><summary>Settings</summary>![Setting test](documentation/testing/settings.png)</details> |  PASS  |
 
-Settings.py validation errors of line to long are from the original django configuration set up and are left for readability.
+Settings.py validation errors of line to long are from the original Django configuration set up and are left for readability.
+<details><summary>Line to long Setting.py</summary>
 
+![Setting test](documentation/testing/settinglong.png)</details>
 
 
 
@@ -305,15 +306,15 @@ Settings.py validation errors of line to long are from the original django confi
 **User Registered**
 - There are some features that are only visible when the user is logged in.
 - User can create a post.
-- User can edit there own post they created.
+- User can edit their own post they created.
 - User can leave a comment.
-- User can delete there own post they created
+- User can delete their own post they created
   
 **User Not Registered**
 
-- If there is no user logged in, The home page won't show Crate a post.
+- If there is no user logged in, the home page won't show Crate a post.
 - The user will be able to see a post entry but won't be able to add a comment.
-- The user isn't able to edit or deleted a post unless its a post that the user has created.
+- The user isn't able to edit or deleted a post unless it's a post that the user has created.
 
 <details>
 <summary>Login and Not Logged in Page</summary>
@@ -326,8 +327,8 @@ Settings.py validation errors of line to long are from the original django confi
 **User Registered**
 
 - If a user is registered, they will be able to create a post.
-- If the user has created a post, that user will be able to edit and deleted there own post.
-- If the user isn't the creator of the post the user can't edit or deleted the post, only add coments.
+- If the user has created a post, that user will be able to edit and deleted their own post.
+- If the user isn't the creator of the post the user can't edit or deleted the post, only add comments.
 - Alert messages appear when a use has logged in, logged out, a comment added, a post is edited and a when a post is deleted.
 
 **Image display**
@@ -343,7 +344,7 @@ Settings.py validation errors of line to long are from the original django confi
 
 
 ## Checks Completed
-- The following check have been conpleted
+- The following check have been completed
   
 
 |Test|       Action                             |   Result                                                                  |Done   |
@@ -354,11 +355,11 @@ Settings.py validation errors of line to long are from the original django confi
 | 4  |  Login is Clicked	                    |  Signed in and redirected to Blog home page                               | PASS  |
 | 5  |  Logout is clicked 	                    |  Redirected to Sign out page, sign out clicked, and sign out              | PASS  |
 | 6  |  Home page clicked post entry	        |  Directed to post entry.                                                  | PASS  |
-| 7  |  Bolg Post edit/delete post	            |  <details><summary>Not correct user, can't edit or delert post</summary><img src="./documentation/testing/notlogincom.png"></details>                              | PASS  |
+| 7  |  Bolg Post edit/delete post	            |  <details><summary>Not correct user, can't edit or delete post</summary><img src="./documentation/testing/notlogincom.png"></details>                              | PASS  |
 | 8  |  Create a Post	                        |  Redirected to create a post page                                         | PASS  |
 | 9  |  Create a Post page	                    |  No title entered, post button clicked, error field appears               | PASS  |
-| 10 |  Create a Post page	                    |  No Contect entered, post button clicked, error field appears             | PASS  |
-| 11 |  Create a Post page	                    |  No image entered, post button clicked,default image  appears in blog     | PASS  |
+| 10 |  Create a Post page	                    |  No Content entered, post button clicked, error field appears             | PASS  |
+| 11 |  Create a Post page	                    |  No image entered, post button clicked, default image  appears in blog    | PASS  |
 | 12 |  Bolg Post edit, creator	                |  <details><summary>Edit button visible</summary><img src="./documentation/testing/editingpost.png"></details>                                                      | PASS  |
 | 13 |  Bolg Post delete, creator	            |  <details><summary>Delete button visible</summary><img src="./documentation/testing/editingpost.png"></details>                                                    | PASS  |
 | 14 |  Delete button clicked	                |  Confirmation button appears                                              | PASS  |
@@ -366,26 +367,26 @@ Settings.py validation errors of line to long are from the original django confi
 | 16 |  Comment icon	                        |  Correct number on blog page and home page                                | PASS  |
 | 17 |  Like heart button clicked on blog page	|  Increments number by 1                                                   | PASS  |
 | 18 |  heart icon	                            |  Correct number on blog page and home page                                | PASS  |
-| 19 |  Footer, clicking facebook icon	        |  <details><summary>Redirected to facebook</summary><img src="./documentation/testing/footerlinks.png"></details>                                                   | PASS  |
+| 19 |  Footer, clicking facebook icon	        |  <details><summary>Redirected to Facebook</summary><img src="./documentation/testing/footerlinks.png"></details>                                                   | PASS  |
 | 20 |  Footer, clicking Twitter (x) icon	    |  <details><summary>Redirected to Twitter</summary><img src="./documentation/testing/footerlinks.png"></details>                                                | PASS  |
-| 21 |  Footer, clicking Github icon	        |  <details><summary>Redirected to Github</summary><img src="./documentation/testing/footerlinks.png"></details>                                                     | PASS  |
+| 21 |  Footer, clicking Github icon	        |  <details><summary>Redirected to GitHub</summary><img src="./documentation/testing/footerlinks.png"></details>                                                     | PASS  |
 | 22 |  Footer, clicking Instagram icon	        |  <details><summary>Redirected to Instagram</summary><img src="./documentation/testing/footerlinks.png"></details>                                                  | PASS  |
-| 23 |  Footer, clicking Youtube icon	        |  <details><summary>Redirected to Youtube</summary><img src="./documentation/testing/footerlinks.png"></details>                                                 | PASS  |
+| 23 |  Footer, clicking Youtube icon	        |  <details><summary>Redirected to YouTube</summary><img src="./documentation/testing/footerlinks.png"></details>                                                 | PASS  |
 | 24 |  Message alert for Signed in	            |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 25 |  Message alert for Signed out	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 26 |  Message alert for post edited	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 27 |  Message alert for post deleted	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 28 |  Message alert for comment added	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
-| 29 |  Next and Prev buttons	                |  Direct to next and Prevous pages                                         | PASS  |
+| 29 |  Next and Prev buttons	                |  Direct to next and Previous pages                                         | PASS  |
 
 
 |Test|     Post Detail Page                     |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Edit button                             | Visable for authenticated user of post                                    | PASS  |
-| 2  |  Edit button                             | Isn't Visable for unauthenticated user of post                            | PASS  |
-| 3  |  Deleted button	                        | Visable for authenticated user of post                                    | PASS  |
-| 4  |  Deleted button	                        | Isn't Visable for unauthenticated user of post                            | PASS  |
-| 5  |  Add comment button 	                    | Visable for authenticated user of the site                                | PASS  |
+| 1  |  Edit button                             | Visible for authenticated user of post                                    | PASS  |
+| 2  |  Edit button                             | Isn't Visible for unauthenticated user of post                            | PASS  |
+| 3  |  Deleted button	                        | Visible for authenticated user of post                                    | PASS  |
+| 4  |  Deleted button	                        | Isn't Visible for unauthenticated user of post                            | PASS  |
+| 5  |  Add comment button 	                    | Visible for authenticated user of the site                                | PASS  |
 
 
 |Test|     Sign Up page                         |   Result                                                                  |Done   |
@@ -398,9 +399,9 @@ Settings.py validation errors of line to long are from the original django confi
 
 |Test|     Contact Page                         |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
-| 1  |  Submint button                          | Hover over, colour changes                                                | PASS  |
-| 2  |  Submint button clicked                  | Message sends, Alert message appears                                      | PASS  |
-| 3  |  Submint button clicked                  | Django admin app is updated with contact name, email and message          | PASS  |
+| 1  |  Submit button                          | Hover over, colour changes                                                | PASS  |
+| 2  |  Submit button clicked                  | Message sends, Alert message appears                                      | PASS  |
+| 3  |  Submit button clicked                  | Django admin app is updated with contact name, email and message          | PASS  |
 
 
 |Test|     Logout Page                          |   Result                                                                  |Done   |
@@ -486,7 +487,7 @@ The website has been tested in the following browsers on desktop:
 
 
 
-# Deplyoment
+# Deployment
 
 The website uses [ElephantSQL](https://www.elephantsql.com/) for its database.
 
@@ -512,7 +513,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 # Issues
 
 - SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
-- I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. <mark>Images below in Error Images wblog_contact </mark>. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance I was told that the datadase was corrupted and that if it was to be fixed I would lose everthing that I had done. I decided not to go ahead and deleted everything and start the project again.
+- I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. <mark>Images below in Error Images wblog_contact </mark>. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance I was told that the datadase was corrupted and that if it was to be fixed I would lose everything that I had done. I decided not to go ahead and deleted everything and start the project again.
 <details>
 <summary>Error Images wblog_contact</summary>
 
@@ -520,14 +521,14 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 ![contact wblog image](documentation/contactwblog.png)
  </details>
 
-- After this I decided that it would be nice if the user could see a video of the watch. After adding the code to views,urls,admin and then running python3 migrate in the terminal. After this there was an issue with the video blog and it does not exist error, the same issue with the contact page previously. I got in contact with tutor assistance, after chatting with them it was decided to delete that migration file, then run migrate again, I was told that only the posts created in the blog would be deleted and not the whole project. I then realised that the issue with the contact page could have been solved the same way and I misunderstood the term deleted, and it wasn't the whole project that would be deleted. This could have saved a lot of time in me doing research and coding to upload videos. The mirgration file was deleted and a new superuser was created. New posts were added to the blog.
+- After this I decided that it would be nice if the user could see a video of the watch. After adding the code to views,urls,admin and then running python3 migrate in the terminal. After this there was an issue with the video blog and it does not exist error, the same issue with the contact page previously. I got in contact with tutor assistance, after chatting with them it was decided to delete that migration file, then run migrate again, I was told that only the posts created in the blog would be deleted and not the whole project. I then realised that the issue with the contact page could have been solved the same way and I misunderstood the term deleted, and it wasn't the whole project that would be deleted. This could have saved a lot of time in me doing research and coding to upload videos. The migration file was deleted and a new superuser was created. New posts were added to the blog.
 <details>
 <summary>Error Images wblog_video</summary>
 
 ![videowblog image](documentation/videowblog.png)
  </details>
 
-- After realising that I wouldn't have to deleted the whole project, I added the contact page to the site instead of adding videos, as feedback from the users is more valuable to the site. This could have saved me a lot of time working on other areas of the project. 
+- After realising that I wouldn't have to delete the whole project, I added the contact page to the site instead of adding videos, as feedback from the users is more valuable to the site. This could have saved me a lot of time working on other areas of the project. 
 
 
 
@@ -555,12 +556,12 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 
 # Media
 
-- Photos saved in Cloudinary and images taken by myself and images from [Pxhere](https://pxhere.com/),[Pexels](https://www.pexels.com/),[Unsplash](https://unsplash.com/).
+- Photos saved in Cloudinary and images taken by me and images from [Pxhere](https://pxhere.com/),[Pexels](https://www.pexels.com/),[Unsplash](https://unsplash.com/).
 
 # Credits
 
 - This website was built by following the walkthrough project Django Blog by Code Institute.
-- Dj-ango Generic view documentation: [Django Generic view](https://docs.djangoproject.com/en/3.2/topics/class-based-views/generic-display/).
+- Django Generic view documentation: [Django Generic view](https://docs.djangoproject.com/en/3.2/topics/class-based-views/generic-display/).
 - Django admin site documentation: [Django admin site](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_display).
 - Django URL dispatcher documentation: [Django URL dispatcher site](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request).
 - SummerNote, editor for the Posts: [SummerNote](https://summernote.org/).
@@ -582,9 +583,9 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 - Build a Social Media App with Django video Tutorial [Python Web Framework Tutorial](https://www.youtube.com/watch?v=xSUm6iMtREA)
 - Codemy.com- video Tutorial [Create A Simple Django Blog](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
 - Codemy.com- video Tutorial [Stack overflow](https://stackoverflow.com/questions/534839/how-to-create-a-guid-uuid-in-python)
-- Developer- Runnign tests for Django [developer](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing#how_to_run_the_tests)
+- Developer- Running tests for Django [developer](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing#how_to_run_the_tests)
 
 # Credits to Tutor support
 
-- The following tutors online at CI, guided and helped me during this project - Osin, John, Rebecca, Martin, Gemma, Joanne, jason, Kevin, Sean.
+- The following tutors online at CI, guided and helped me during this project - Osin, John, Rebecca, Martin, Gemma, Joanne, Jason, Kevin, Sean.
 - My mentor Rory Patrick Sheridan for good briefings, tips and feedback.
