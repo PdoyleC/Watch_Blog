@@ -2,6 +2,11 @@
 
 Return back to the [README.md](README.md) file.
 
+
+Manual testing is where the creator of the code/site does quality checks/tests on the code, this is completed step by step. The purpose of tests is to catch any bugs or issues in the site before going live.
+
+Automated testing is where code is used to test the logic, set of instructions to validate a feature or expected outcome of the code/feature.
+
 ## Validator Testing
 
 ### HTML
