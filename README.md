@@ -222,7 +222,7 @@ For authenticated users it links to:
 
 # Testing
 
-Please see [TESTING.md](TESTING.md) for all testing completed.
+Please see [TESTNG.md](TESTNG.md) for all testing completed.
 
 
 
