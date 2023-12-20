@@ -291,11 +291,6 @@ Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 Settings py validation errors of line to long are from the original django configuration set up and are left for readability.
 
 
-![Setting test](documentation/testing/settinglong.png)</details>
-
-
-
-
 
 
 # Manual Testing
@@ -538,9 +533,9 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [Favicon.io](https://favicon.io/) has been used for the favicon.
 - [GitHub](https://github.com/PdoyleC/Watch_Blog) repository has been used for hosting the code.
-- Cloudinary has been used to store media files.
+- [Cloudinary](https://cloudinary.com/) has been used to store media files.
 - [Font Awesome](https://fontawesome.com/icons) has been used for icons.
-- ElephantSQL has been used as database solution.
+- [ElephantSQL](https://www.elephantsql.com/) has been used as database solution.
 
 # Frameworks, Libraries & Programs Used
 - [Cloudinary](https://cloudinary.com/)  used to upload, store, manage, and link images.
