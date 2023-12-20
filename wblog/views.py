@@ -9,7 +9,7 @@ from django.utils.text import slugify
 from .forms import CommentForm, NewPostForm, VideoPostForm, ContactForm
 
 
-# Post list view
+
 class PostList(generic.ListView):
     """
     Post List view to show all watches
@@ -78,10 +78,13 @@ class PostDetail(View):
             },
         )
 
-# Likes an Post
+
 
 
 class PostLike(View):
+    """
+    Likes an Post
+    """
 
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
@@ -92,10 +95,11 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-# Creates a new Post
-
 
 class NewPost(View):
+    """
+    Creates a new Post
+    """
     def get(self, request):
         form = NewPostForm()
         return render(request, 'new_post.html', {'form': form})
@@ -117,6 +121,9 @@ class NewPost(View):
 
 
 class NewvideoPost(View):
+    """
+    New video post
+    """
     def get(self, request):
         form = VideoPostForm()
         return render(request, 'new_video.html', {'form': form})
@@ -145,10 +152,12 @@ class NewvideoPost(View):
                 'post_detail', args=[post.slug]))
         return render(request, 'new_post.html', {'form': form})
 
-# Edits an Post
 
 
-class EditPost(View):
+class EditPost(View):    
+    """
+    Edits an Post
+    """
     def get(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -187,7 +196,10 @@ class EditPost(View):
             return redirect('post_detail', slug=slug)
 
 
-def contact(request):
+def contact(request):    
+    """
+    For the contact page
+    """
     submitted = False
     if request.method == "POST":
         form = ContactForm(request.POST)
@@ -204,10 +216,13 @@ def contact(request):
     return render(request, 'contact.html', {'form': form})
 
 
-# Deletes an Post
 
 
 class DeletePost(View):
+    
+    """
+    Deletes an Post
+    """
     def get(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
         return render(request, 'post_delete.html', {'post': post})
