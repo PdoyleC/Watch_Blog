@@ -15,7 +15,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
     - [Agile](#agile)
   - [Users](#users)
   - [Design](#design)
-  - [Database schema](#database-schema)
+    - [Database schema](#database-schema)
     - [Buttons](#buttons)
 - [Features](#features)
 - [Languages Used](#languages-used)
@@ -93,7 +93,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 ![Watch logo](documentation/paintfco.jpg)
 </details>
 
-## Database schema
+### Database schema
 
 <details>
 <summary>Database schema diagram</summary>
