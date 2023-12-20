@@ -52,6 +52,7 @@ No errors or warnings to show for during the CSS Validator testing.
 Validator: [JSHint Validator](https://jshint.com/).
 <details>
 <summary>JS Validation Image</summary>
+JSHint quality tool has been used to test the code, without finding any errros or warnings. THere is 1 underfined variable warning reported, were due to bootstrap.
 
 ![JS Validation](documentation/testing/script.png)
 </details>
