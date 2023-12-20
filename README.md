@@ -14,7 +14,6 @@ This site is a blog style watch site, aimed at people interested in Watches and 
   - [User Experience](#user-experience)
     - [Agile](#agile)
   - [Users](#users)
-  - [Wireframe/Structure](#wireframestructure)
   - [Design](#design)
   - [Database schema](#database-schema)
     - [Buttons](#buttons)
@@ -66,12 +65,8 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 
 - I wanted the user to go straight to the blog, to see the watches and not to a about page. 
 - Users have full CRUD functionality, Create posts, Read post and comments, Update posts they've created and Delete posts they've created.
-- There're comments and likes features also for each post, so users can interact with the blog.
-
-## Wireframe/Structure
 
 - The blog is divided into different pages, one page to post an article, one page to send a contact to the site owner, one page to view the blog, and others to sign in and out.
-- Wireframes were made using [balsamiq wireframes](https://balsamiq.com/wireframes/)
 - All users can view the blog. Only authenticated user can create, edit, add comments and deleted posts.
 
 <details>
