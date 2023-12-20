@@ -69,7 +69,11 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 - The blog is divided into different pages, one page to post an article, one page to send a contact to the site owner, one page to view the blog, and others to sign in and out.
 - All users can view the blog. Only authenticated user can create, edit, add comments and deleted posts.
 
-<details>
+
+
+
+## Design
+
 <summary>Wireframes Image</summary>
 
 ![homewire wireframes](documentation/wireframes/homewire.png)
@@ -78,9 +82,6 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 ![siginoutwire wireframes](documentation/wireframes/siginoutwire.png)
 ![aboutwire wireframes](documentation/wireframes/aboutwire.png)
 </details>
-
-
-## Design
 <details>
 <summary>Watch Favicon Image</summary>
 
@@ -452,6 +453,10 @@ Settings py validation errors of line to long are from the original django confi
 ![coverage image](documentation/testing/coverage.png)
 
 ![coverage html  image](documentation/testing/coveragehtml.png)
+
+![Forms code image](documentation/testing/testformspy.png)
+
+![Views code image](documentation/testing/testviewspy.png)
 
 
 
