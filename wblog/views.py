@@ -1,6 +1,7 @@
 import uuid
 from cloudinary.uploader import upload
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
@@ -20,7 +21,7 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
-class PostDetail(View):
+class PostDetail(LoginRequiredMixin, View):
     """
     This part of the code is copied from code institude walkthrough
     'I think therefore I blog'. This section views the post

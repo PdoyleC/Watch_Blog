@@ -19,10 +19,10 @@
               </div>
               <a href="{% url 'post_detail' post.slug  %}" class="post-link">
                 <h2 class="card-title">{{ post.title }}</h2>
-                <p class="card-text">{{ post.excerpt }}</p>
+                <p class="card-text-black">{{ post.excerpt }}</p>
               </a>
               <hr />
-                <p class="card-text text-muted h6">
+                <p class="card-text text-black-muted h6">
                 Author: {{ post.author }} |
                 <i class="btn-like far fa-heart"></i>
                 {{ post.number_of_likes }} |

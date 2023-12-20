@@ -319,6 +319,9 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 - Codemy.com- video Tutorial [Create A Simple Django Blog](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
 - Codemy.com- video Tutorial [Stack overflow](https://stackoverflow.com/questions/534839/how-to-create-a-guid-uuid-in-python)
 - Developer- Running tests for Django [developer](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing#how_to_run_the_tests)
+- Django project- new_post.html - stops direct link to new post being used and creating post with no login. [djangoproject](https://docs.djangoproject.com/en/4.2/topics/auth/default/)
+
+<https://docs.djangoproject.com/en/4.2/topics/auth/default/>
 
 # Credits to Tutor support
 
