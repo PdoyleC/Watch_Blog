@@ -73,7 +73,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 
 
 ## Design
-
+<details>
 <summary>Wireframes Image</summary>
 
 ![homewire wireframes](documentation/wireframes/homewire.png)
