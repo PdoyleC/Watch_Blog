@@ -5,9 +5,6 @@ urlpatterns = [
     path("", views.PostList.as_view(), name="home"),
     path('contact/', views.contact, name='contact'),
     path('new_post/', views.NewPost.as_view(), name='new_post'),
-    path(
-        'new_video_post/',
-        views.NewvideoPost.as_view(), name='new_video_post'),
     path('edit/<slug:slug>/', views.EditPost.as_view(), name='edit_post'),
     path(
         'delete/<slug:slug>/', views.DeletePost.as_view(), name='post_delete'),
