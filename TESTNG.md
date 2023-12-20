@@ -148,6 +148,7 @@ Settings py validation errors of line to long are from the original django confi
 | 28 |  Message alert for comment added	        |  <details><summary>Alert Appears</summary><img src="./documentation/testing/alerts.png"></details>                                                            | PASS  |
 | 29 |  Next and Prev buttons	                |  Direct to next and Previous pages                                         | PASS  |
 
+
 |Test|     Post Detail Page                     |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Edit button                             | Visible for authenticated user of post                                    | PASS  |
@@ -156,6 +157,7 @@ Settings py validation errors of line to long are from the original django confi
 | 4  |  Deleted button	                        | Isn't Visible for unauthenticated user of post                            | PASS  |
 | 5  |  Add comment button 	                    | Visible for authenticated user of the site                                | PASS  |
 
+
 |Test|     Sign Up page                         |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Valid info, submitted                   | Redirected to blog                                                        | PASS  |
@@ -163,16 +165,19 @@ Settings py validation errors of line to long are from the original django confi
 | 3  |  Sign Up button	                        | Hover over, colour changes                                                | PASS  |
 | 4  |  Sign Up button clicked	                | Signed up and redirected to Blog home page                                | PASS  |
 
+
 |Test|     Contact Page                         |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Submit button                          | Hover over, colour changes                                                | PASS  |
 | 2  |  Submit button clicked                  | Message sends, Alert message appears                                      | PASS  |
 | 3  |  Submit button clicked                  | Django admin app is updated with contact name, email and message          | PASS  |
 
+
 |Test|     Logout Page                          |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Sign Out button                         | Hover over, colour changes                                                | PASS  |
 | 2  |  Sign Up button clicked                  | Redirected to Blog home page, Alert message appears                       | PASS  |
+
 
 |Test|     Logout Page                          |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
@@ -180,10 +185,20 @@ Settings py validation errors of line to long are from the original django confi
 | 2  |  Sign Up link clicked                    | Redirected to Sign Up page                                                | PASS  |
 | 3  |  Invalid Username/Password	            | Asked to enter correct username                                           | PASS  |
 
+
 |Test|     Create Post Page                     |   Result                                                                  |Done   |
 |----|------------------------------------------|---------------------------------------------------------------------------|-------|
 | 1  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
 | 2  |  Link to Go Back pressed                 | Redirected to Blog/Home page                                              | PASS  |
+
+
+|Test|     404 Error   Page                     |   Result                                                                  |Done   |
+|----|------------------------------------------|---------------------------------------------------------------------------|-------|
+| 1 |  Incorrect page entered for 404 error	    |  <details><summary>404 error page</summary><img src="./documentation/testing/404errorpage.png"></details>                                                | PASS  |
+
+
+
+
 
 ## WAVE
 
