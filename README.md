@@ -4,11 +4,13 @@ Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com/)**
 
 ![iamresponsive](documentation/iamresponsive.png)
 
-**Purpose of the site**
+# **Purpose of the site**
 This site is a blog style watch site, aimed at people interested in Watches and new Watches on the market.
 
-Table of Contents
+# Table of Contents
 
+- [**Purpose of the site**](#purpose-of-the-site)
+- [Table of Contents](#table-of-contents)
 - [User Experience](#user-experience)
   - [Agile](#agile)
   - [Users](#users)
@@ -16,7 +18,7 @@ Table of Contents
 - [Design](#design)
   - [Favicon design](#favicon-design)
   - [Database schema](#database-schema)
-  - [Buttons](#buttons)
+    - [Buttons](#buttons)
 - [Features](#features)
 - [Languages Used](#languages-used)
 - [Django Admin](#django-admin)
@@ -40,6 +42,7 @@ Table of Contents
 - [Media](#media)
 - [Credits](#credits)
 - [Credits to Tutor support](#credits-to-tutor-support)
+  - [Credits to Tutor support](#credits-to-tutor-support-1)
 
 
 
@@ -115,7 +118,16 @@ This was completed using [DrawSQL](https://drawsql.app/)
 
 </details>
 
-## Buttons
+The site colours are from the gun metal or charcoal colour of metal. The white ensures readability of the text. 
+![Blog Colour](documentation/blogcolour.png)
+
+
+Just under the blog image on the home page is the Author, the number of likes and comment icon. The colouring for this font isn't as strand as the Title of the blog, so it doesn't take away for the title name standing out.
+
+![Comment link image](documentation/commentlink.png)
+
+
+### Buttons
 - Edit and Delete buttons are coloured so there won't be mixed up. The deleted and the confirm deleted button are red to show the danger and importance on the button.
 
 ![buttons](documentation/buttons.png)
@@ -185,6 +197,14 @@ For authenticated users it links to:
 
 ![Delete page image](documentation/deletepage.png)
 </details>
+<details>
+<summary>Comment Link on Home page</summary>
+
+- Just under the blog image is the number of likes and comment icon, the comment icon will bring the user to place a comment.
+
+![Delete page image](documentation/commentlink.png)
+</details>
+
 
 # Languages Used
 
@@ -587,5 +607,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 
 # Credits to Tutor support
 
-- The following tutors online at CI, guided and helped me during this project - Osin, John, Rebecca, Martin, Gemma, Joanne, Jason, Kevin, Sean.
+## Credits to Tutor support
+
+- The following tutors online at CI, guided and helped me during this project - Osin, John, Rebecca, Martin, Gemma, Joanne, jason, Kevin, Sean.
 - My mentor Rory Patrick Sheridan for good briefings, tips and feedback.
