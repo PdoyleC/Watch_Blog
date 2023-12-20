@@ -11,12 +11,11 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 
 - [**Purpose of the site**](#purpose-of-the-site)
 - [Table of Contents](#table-of-contents)
-- [User Experience](#user-experience)
-  - [Agile](#agile)
+  - [User Experience](#user-experience)
+    - [Agile](#agile)
   - [Users](#users)
   - [Wireframe/Structure](#wireframestructure)
-- [Design](#design)
-  - [Favicon design](#favicon-design)
+  - [Design](#design)
   - [Database schema](#database-schema)
     - [Buttons](#buttons)
 - [Features](#features)
@@ -46,9 +45,9 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 
 
 
-# User Experience
+## User Experience
 
-## Agile
+### Agile
 
 - Agile methodology was used for this project, starting from the planning stage and continuing until the final product. GitHub project was used to stay organized and keep track for the different issues being looked after [Kanban board](https://github.com/users/PdoyleC/projects/4/views/1).
 - Agile methodology was used to map and create user stories, each with their own function and list of tasks.
@@ -86,15 +85,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 </details>
 
 
-
-
-
-
-
-
-# Design
-
-## Favicon design
+## Design
 <details>
 <summary>Watch Favicon Image</summary>
 
@@ -118,13 +109,12 @@ This was completed using [DrawSQL](https://drawsql.app/)
 
 </details>
 
-The site colours are from the gun metal or charcoal colour of metal. The white ensures readability of the text. 
+- The site colours are from the gun metal or charcoal colour of metal. The white ensures readability of the text. 
 ![Blog Colour](documentation/blogcolour.png)
 
-
-Just under the blog image on the home page is the Author, the number of likes and comment icon. The colouring for this font isn't as strand as the Title of the blog, so it doesn't take away for the title name standing out.
-
+- Just under the blog image on the home page is the Author, the number of likes and comment icon. The colouring for this font isn't as strand as the Title of the blog, so it doesn't take away for the title name standing out.
 ![Comment link image](documentation/commentlink.png)
+
 
 
 ### Buttons
@@ -197,14 +187,6 @@ For authenticated users it links to:
 
 ![Delete page image](documentation/deletepage.png)
 </details>
-<details>
-<summary>Comment Link on Home page</summary>
-
-- Just under the blog image is the number of likes and comment icon, the comment icon will bring the user to place a comment.
-
-![Delete page image](documentation/commentlink.png)
-</details>
-
 
 # Languages Used
 
@@ -311,8 +293,8 @@ Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 | Admin    | <details><summary>Admin</summary>![Admin test](documentation/testing/adminpy.png)</details>       |  PASS  |
 | Settings | <details><summary>Settings</summary>![Setting test](documentation/testing/settings.png)</details> |  PASS  |
 
-Settings.py validation errors of line to long are from the original Django configuration set up and are left for readability.
-<details><summary>Line to long Setting.py</summary>
+Settings py validation errors of line to long are from the original django configuration set up and are left for readability.
+
 
 ![Setting test](documentation/testing/settinglong.png)</details>
 
