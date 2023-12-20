@@ -8,8 +8,6 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('body',)
 
-# Form for posting a new Alert
-
 
 class NewPostForm(forms.ModelForm):
     class Meta:
