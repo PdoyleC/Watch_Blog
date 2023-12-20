@@ -9,7 +9,6 @@ from django.utils.text import slugify
 from .forms import CommentForm, NewPostForm, VideoPostForm, ContactForm
 
 
-
 class PostList(generic.ListView):
     """
     Post List view to show all watches
@@ -79,13 +78,10 @@ class PostDetail(View):
         )
 
 
-
-
 class PostLike(View):
     """
     Likes an Post
     """
-
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -153,8 +149,7 @@ class NewvideoPost(View):
         return render(request, 'new_post.html', {'form': form})
 
 
-
-class EditPost(View):    
+class EditPost(View):
     """
     Edits an Post
     """
@@ -196,7 +191,7 @@ class EditPost(View):
             return redirect('post_detail', slug=slug)
 
 
-def contact(request):    
+def contact(request):
     """
     For the contact page
     """
@@ -216,10 +211,7 @@ def contact(request):
     return render(request, 'contact.html', {'form': form})
 
 
-
-
 class DeletePost(View):
-    
     """
     Deletes an Post
     """
