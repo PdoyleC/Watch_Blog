@@ -509,8 +509,16 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 
 # Issues
 
+- It seem  that there was an issue with the order of the URL, the new_post url above the post_detail, What was happening was that Django was going through these urls in order, and stopping at the first one that matched the path info. It was solved by moving the new_post url above the post_detail.
+<details>
+<summary>URL error</summary>
+
+![URL error ](documentation/url.png)
+![URL error ](documentation/urlerror.png)
+</details>
+
 - SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
-- I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. <mark>Images below in Error Images wblog_contact </mark>. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance, I was told that the database was corrupted and that if it was to be fixed, I would lose everything that I had done. I decided not to go ahead and deleted everything and start the project again.
+- I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. Images below in Error Images wblog_contact. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance, I was told that the database was corrupted and that if it was to be fixed, I would lose everything that I had done. I decided not to go ahead and deleted everything and start the project again.
 <details>
 <summary>Error Images wblog_contact</summary>
 
