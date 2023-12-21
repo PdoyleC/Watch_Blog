@@ -231,7 +231,7 @@ Please see [TESTNG.md](TESTNG.md) for all testing completed.
 
 ## How to Fork
 - Log in to Github
-- Go to repository for thi project.
+- Go to repository for this project.
 - Click the fork button in the top right corner
 
 ## How to Clone
@@ -308,7 +308,7 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 ![doesnothttp image](documentation/testing/doesnothttp.png)
  </details>
  
-After reading posts in stack and going throught articles from the following sites 
+After reading posts in stack and going through articles from the following sites 
 [stackoverflow HTTPS](https://stackoverflow.com/questions/2746047/why-not-use-https-for-everything), 
 [Developer.Chrome](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https) ,
 [stackoverflow HTTPS](https://stackoverflow.com/questions/57132492/lighthouse-report-insecure-requests-found) ,

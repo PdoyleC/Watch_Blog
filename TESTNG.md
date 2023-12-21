@@ -53,7 +53,7 @@ No errors or warnings to show for during the CSS Validator testing.
 Validator: [JSHint Validator](https://jshint.com/).
 <details>
 <summary>JS Validation Image</summary>
-JSHint quality tool has been used to test the code, without finding any errros or warnings. THere is 1 underfined variable warning reported, were due to bootstrap.
+JSHint quality tool has been used to test the code, without finding any erros or warnings. There is 1 undefined variable warning reported, were due to bootstrap.
 
 ![JS Validation](documentation/testing/script.png)
 </details>
@@ -71,7 +71,7 @@ Validator: [CI Python Linter](https://pep8ci.herokuapp.com/).
 | Admin    | <details><summary>Admin</summary>![Admin test](documentation/testing/adminpy.png)</details>       |  PASS  |
 | Settings | <details><summary>Settings</summary>![Setting test](documentation/testing/settings.png)</details> |  PASS  |
 
-Settings py validation errors of line to long are from the original django configuration set up and are left for readability.
+Settings py validation errors of line to long are from the original Django configuration set up and are left for readability.
 
 # Manual Testing
 
@@ -137,7 +137,7 @@ Settings py validation errors of line to long are from the original django confi
 | 16 |  Comment icon	                        |  Correct number on blog page and home page                                | PASS  |
 | 17 |  Like heart button clicked on blog page	|  Increments number by 1                                                   | PASS  |
 | 18 |  heart icon	                            |  Correct number on blog page and home page                                | PASS  |
-| 19 |  Footer, clicking facebook icon	        |  <details><summary>Redirected to Facebook</summary><img src="./documentation/testing/footerlinks.png"></details>                                                   | PASS  |
+| 19 |  Footer, clicking Facebook icon	        |  <details><summary>Redirected to Facebook</summary><img src="./documentation/testing/footerlinks.png"></details>                                                   | PASS  |
 | 20 |  Footer, clicking Twitter (x) icon	    |  <details><summary>Redirected to Twitter</summary><img src="./documentation/testing/footerlinks.png"></details>                                                | PASS  |
 | 21 |  Footer, clicking GitHub icon	        |  <details><summary>Redirected to GitHub</summary><img src="./documentation/testing/footerlinks.png"></details>                                                     | PASS  |
 | 22 |  Footer, clicking Instagram icon	        |  <details><summary>Redirected to Instagram</summary><img src="./documentation/testing/footerlinks.png"></details>                                                  | PASS  |
