@@ -222,7 +222,9 @@ Settings py validation errors of line to long are from the original django confi
 <details>
 <summary>Lighthouse Testing Image</summary>
 
-![waveblog image](documentation/testing/lighthouse.png)
+![Lighthouse about page image](documentation/testing/lighthouseabout.png)
+![Lighthouse image](documentation/testing/lighthouse.png)
+
 
 - Performance is down to the images and their size.
 - Best Practices  [Lighthouse](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https)
