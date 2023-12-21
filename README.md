@@ -2,7 +2,7 @@ Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com/)**
 
 [Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
 
-![iamresponsive](documentation/iamresponsive.png)
+![iamresponsive](documentation/readme/iamresponsive.png)
 
 [Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
 
