@@ -101,11 +101,6 @@ This was completed using [DrawSQL](https://drawsql.app/)
 - The site colours are from the gun metal or charcoal colour of metal. The white ensures readability of the text. 
 ![Blog Colour](documentation/blogcolour.png)
 
-- Just under the blog image on the home page is the Author, the number of likes and comment icon. The colouring for this font isn't as strand as the Title of the blog, so it doesn't take away for the title name standing out.
-
-![Comment link image](documentation/commentlink.png)
-
-
 
 ### Buttons
 - Edit and Delete buttons are coloured so there won't be mixed up. The deleted and the confirm deleted button are red to show the danger and importance on the button.
