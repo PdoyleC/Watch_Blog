@@ -218,12 +218,16 @@ Settings py validation errors of line to long are from the original django confi
 - Best practices - how does the site conform to industry best practices.
 - SEO - search engine optimization. Is the site optimized for search engine result rankings.
 
-- Performance is down to the images and their size.
 
 <details>
 <summary>Lighthouse Testing Image</summary>
 
 ![waveblog image](documentation/testing/lighthouse.png)
+
+- Performance is down to the images and their size.
+- Best Practices  [Lighthouse](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https)
+
+
 </details>
 
 # Automated Testing

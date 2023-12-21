@@ -28,8 +28,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 - [Security](#security)
 - [Media](#media)
 - [Credits](#credits)
-- [Credits to Tutor support](#credits-to-tutor-support)
-  - [Credits to Tutor support](#credits-to-tutor-support-1)
+  - [Credits to Tutor support](#credits-to-tutor-support)
 
 
 
@@ -321,9 +320,6 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 - Developer- Running tests for Django [developer](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing#how_to_run_the_tests)
 - Django project- new_post.html - stops direct link to new post being used and creating post with no login. [djangoproject](https://docs.djangoproject.com/en/4.2/topics/auth/default/)
 
-<https://docs.djangoproject.com/en/4.2/topics/auth/default/>
-
-# Credits to Tutor support
 
 ## Credits to Tutor support
 
