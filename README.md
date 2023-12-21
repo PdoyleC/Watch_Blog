@@ -192,7 +192,6 @@ For authenticated users it links to:
 <summary>Contact Image from Django Admin </summary>
 
 ![Contact image](documentation/testing/contactdjanjo.png)
-![Contact gif](documentation/testing/giftestcontactusl.gif)
 </details>
 
 <details>
