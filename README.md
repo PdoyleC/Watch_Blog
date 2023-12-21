@@ -22,6 +22,11 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 - [Django Admin](#django-admin)
 - [Testing](#testing)
 - [Deployment](#deployment)
+  - [How to Fork](#how-to-fork)
+  - [How to Clone](#how-to-clone)
+  - [ElephantSQL Database](#elephantsql-database)
+  - [Cloudinary](#cloudinary)
+  - [Heroku](#heroku)
 - [Issues](#issues)
 - [Technologies Used](#technologies-used)
 - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
@@ -97,6 +102,7 @@ This was completed using [DrawSQL](https://drawsql.app/)
 ![Blog Colour](documentation/blogcolour.png)
 
 - Just under the blog image on the home page is the Author, the number of likes and comment icon. The colouring for this font isn't as strand as the Title of the blog, so it doesn't take away for the title name standing out.
+
 ![Comment link image](documentation/commentlink.png)
 
 
@@ -215,30 +221,52 @@ Please see [TESTNG.md](TESTNG.md) for all testing completed.
 
 # Deployment
 
+## How to Fork
+- Log in to Github
+- Go to repository for thi project.
+- Click the fork button in the top right corner
+
+## How to Clone
+- Log in(or Sign Up) to Github
+- Go to repository for this project
+- Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+- Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+- Type the following command in the terminal (after the git clone you will need to paste the link you copied in step 3 above)
+- Set up a virtual environment.
+- Install the packages from the requirements.txt file - run Command pip3 install -r requirements.txt
+ 
+## ElephantSQL Database
 The website uses [ElephantSQL](https://www.elephantsql.com/) for its database.
 
 - I signed up with my GitHub account.
 - I created a new instance and the free plan was selected, and Europe was selected as the region.
 - Once created I was able to access the  and password for the database.
 
+## Cloudinary
+
 The website uses [Cloudinary](https://cloudinary.com/) for storing images.
 
 - I created an account in Cloudinary.
 - I copied the API environment variable over to the code.
 
+## Heroku
 The website was deployed to [Heroku](https://heroku.com/) by following these steps:
 
 - I created a new app/Project.
+- Enter a unique application name, Select your region, Click Create App
 - Inside the project settings tab and clicked reveal configuration vars
 - I added the following configuration vars: CLOUDINARY_URL, DATABASE_URL, PORT, SECRET_KEY - DISABLE_COLLECTSTATIC = Only for initial deployment-
 - I went to the deploy tab and connected the GitHub repository
+- Add the DATABASE_URL chosen SECRET_KEY value to the env.py file.
+- Update the settings.py file to import the env.py file with SECRETKEY and DATABASE_URL added.
+- Add Heroku to the ALLOWED_HOSTS list in settings.py ['app_name.heroku.com', 'localhost']
 - Made sure DEBUG was set to False and removed DISABLE_COLLECTSTATIC in configuration vars.
 - selected Deploy tab and clicked Main branch.
 - clicked on Open app.
 
 # Issues
 
-- It seem  that there was an issue with the order of the URL, the new_post url above the post_detail, What was happening was that Django was going through these urls in order, and stopping at the first one that matched the path info. It was solved by moving the new_post url above the post_detail.
+1. It seem  that there was an issue with the order of the URL, the new_post url above the post_detail, What was happening was that Django was going through these urls in order, and stopping at the first one that matched the path info. It was solved by moving the new_post url above the post_detail.
 <details>
 <summary>URL error</summary>
 
@@ -246,8 +274,9 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 ![URL error ](documentation/urlerror.png)
 </details>
 
-- SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
-- I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. Images below in Error Images wblog_contact. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance, I was told that the database was corrupted and that if it was to be fixed, I would lose everything that I had done. I decided not to go ahead and deleted everything and start the project again.
+2. SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
+
+3. I tried to have a Contact Us page on the site, early on in the project but I ran into a problem after trying to run python3 migrate in the terminal. Images below in Error Images wblog_contact. There was an issue saying that there was no contact Us and that it doesn't exist. After contacting tutor assistance, I was told that the database was corrupted and that if it was to be fixed, I would lose everything that I had done. I decided not to go ahead and deleted everything and start the project again.
 <details>
 <summary>Error Images wblog_contact</summary>
 
@@ -264,9 +293,19 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 
 - After realising that I wouldn't have to delete the whole project, I added the contact page to the site instead of adding videos, as feedback from the users is more valuable to the site. This could have saved me a lot of time working on other areas of the project. 
 
+4. There was an issue with the lighthouse score for Best Practices, when it was at 73. Saying the issue was that "Does not use HTTPS"
+<details>
+<summary>Does not use HTTPS</summary>
 
-
-
+![doesnothttp image](documentation/testing/doesnothttp.png)
+ </details>
+ 
+After reading posts in stack and going throught articles from the following sites 
+[stackoverflow HTTPS](https://stackoverflow.com/questions/2746047/why-not-use-https-for-everything), 
+[Developer.Chrome](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https) ,
+[stackoverflow HTTPS](https://stackoverflow.com/questions/57132492/lighthouse-report-insecure-requests-found) ,
+[whynopadlock](https://www.whynopadlock.com/results/4ae115be-930a-4b66-ab0e-6282360235e4)
+which talked about adding a htaccess file to the root directory. I went and looked at the error message again. I could see that the insecure URL was from res.cloudinary and I changed the image, preformed the lighthouse test again and the scorw was up at 95. 
 
 
 
