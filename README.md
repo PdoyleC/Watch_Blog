@@ -4,12 +4,13 @@ Welcome to the **[Watch Blog](https://watch-blog-1e2436fde037.herokuapp.com/)**
 
 ![iamresponsive](documentation/iamresponsive.png)
 
-# **Purpose of the site**
+[Link, to live project](https://watch-blog-1e2436fde037.herokuapp.com/)
+
+**Purpose of the site**
 This site is a blog style watch site, aimed at people interested in Watches and new Watches on the market.
 
 # Table of Contents
 
-- [**Purpose of the site**](#purpose-of-the-site)
 - [Table of Contents](#table-of-contents)
   - [User Experience](#user-experience)
     - [Agile](#agile)
@@ -48,7 +49,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 <details>
 <summary>Project Issues Image</summary>
 
-![projectissues wireframes](documentation/projectissues.png)
+![projectissues wireframes](documentation/readme/projectissues.png)
 </details>
 
 
@@ -83,7 +84,7 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 - favicon was used for website image tab [Link](https://favicon.io/favicon-converter/)
   
 
-![Watch logo](documentation/paintfco.jpg)
+![Watch logo](documentation/readme/paintfco.jpg)
 </details>
 
 ### Database schema
@@ -94,20 +95,20 @@ This site is a blog style watch site, aimed at people interested in Watches and 
 This was completed using [DrawSQL](https://drawsql.app/)
 
 
-![Database structure](documentation/drawsql.png)
+![Database structure](documentation/readme/drawsql.png)
 
 </details>
 
 - The site colours are from the gun metal or charcoal colour of metal. The white ensures readability of the text. 
-![Blog Colour](documentation/blogcolour.png)
+![Blog Colour](documentation/readme/blogcolour.png)
 
 
 ### Buttons
 - Edit and Delete buttons are coloured so there won't be mixed up. The deleted and the confirm deleted button are red to show the danger and importance on the button.
 
-![buttons](documentation/buttons.png)
+![buttons](documentation/readme/buttons.png)
 
-![buttons](documentation/deletepage.png)
+![buttons](documentation/readme/deletepage.png)
 
 
 
@@ -124,7 +125,7 @@ For authenticated users it links to:
 - Logout Page
 - Welcome Username display
 
-![NavBar image](documentation/navbar.png)
+![NavBar image](documentation/readme/navbar.png)
 </details>
 <details>
 <summary>NavBar Not signed in</summary>
@@ -135,42 +136,55 @@ For authenticated users it links to:
 - Register Page
 - Login Page
   
-![NavBar not signed in image](documentation/navbarnotreg.png)
+![NavBar not signed in image](documentation/readme/navbarnotreg.png)
 </details>
 <details>
 <summary>Footer</summary>
 
 - Links to Facebook, Twitter, GitHub, Instagram and YouTube
 
-![Footer image](documentation/footer.png)
+![Footer image](documentation/readme/footer.png)
 </details>
 <details>
 <summary>About Page</summary>
 
 -Contains info about the site.
 
-![About page image](documentation/aboutpage.png)
+![About page image](documentation/readme/aboutpage.png)
 </details>
 <details>
 <summary>Registration Page</summary>
 
 - Where new users are able to create an account to post an article. 
-![Registration page image](documentation/regblogpage.png)
+![Registration page image](documentation/readme/regblogpage.png)
 
 </details>
+
+<details>
+<summary>Alert Message login</summary>
+
+![Alert Message login image](documentation/readme/alertsigin.png)
+</details>
+
+<details>
+<summary>Welcome Username Display</summary>
+
+![Welcome Username Display image](documentation/readme/welcomeusername.png)
+</details>
+
 <details>
 <summary>Edit & Delete button</summary>
 
 - Where users can Edit and delete a post that they have created, this is only visible if you're the author of the post. 
 
-![Delete image](documentation/delete.png)
+![Delete image](documentation/readme/delete.png)
 </details>
 <details>
 <summary>Delete Confirmation Page</summary>
 
 - Just a check to see if the user wants to delete there post.
 
-![Delete page image](documentation/deletepage.png)
+![Delete page image](documentation/readme/deletepage.png)
 </details>
 
 # Languages Used
@@ -264,8 +278,8 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 <details>
 <summary>URL error</summary>
 
-![URL error ](documentation/url.png)
-![URL error ](documentation/urlerror.png)
+![URL error ](documentation/readme/url.png)
+![URL error ](documentation/readme/urlerror.png)
 </details>
 
 2. SummerNote wasn't connecting because of Django clickjacking [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options).
@@ -274,15 +288,15 @@ The website was deployed to [Heroku](https://heroku.com/) by following these ste
 <details>
 <summary>Error Images wblog_contact</summary>
 
-![contact wblog error image](documentation/contactwblogerror.png)
-![contact wblog image](documentation/contactwblog.png)
+![contact wblog error image](documentation/readme/contactwblogerror.png)
+![contact wblog image](documentation/readme/contactwblog.png)
  </details>
 
 - After this I decided that it would be nice if the user could see a video of the watch. After adding the code to views,urls and admin, and then running python3 migrate in the terminal. After this there was an issue with the video blog and it does not exist error, the same issue with the contact page previously. I got in contact with tutor assistance, after chatting with them it was decided to delete that migration file, then run migrate again, I was told that only the posts created in the blog would be deleted and not the whole project. I then realised that the issue with the contact page could have been solved the same way and I misunderstood the term deleted, and it wasn't the whole project that would be deleted. This could have saved a lot of time in me doing research and coding to upload videos. The migration file was deleted and a new superuser was created. New posts were added to the blog.
 <details>
 <summary>Error Images wblog_video</summary>
 
-![videowblog image](documentation/videowblog.png)
+![videowblog image](documentation/readme/videowblog.png)
  </details>
 
 - After realising that I wouldn't have to delete the whole project, I added the contact page to the site instead of adding videos, as feedback from the users is more valuable to the site. This could have saved me a lot of time working on other areas of the project. 
